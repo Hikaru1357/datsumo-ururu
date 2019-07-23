@@ -1,0 +1,136 @@
+/**
+ * default.css
+ * updatedAt: 2018.03.02
+ */
+
+/*========================================
+
+  Reset
+
+========================================*/
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p {margin:0;}
+header,footer,nav,main,aside,article,section{display:block}
+
+
+
+/*========================================
+
+  override .s5-returnToTop
+
+========================================*/
+.s5-returnToTop {
+  margin: 0;
+}
+
+
+/*========================================
+
+  html
+
+========================================*/
+@media(max-width: 960px) {
+  html { font-size: 93.8%; }
+}
+@media(max-width: 768px) {
+  html { font-size: 87.5%; }
+}
+@media(max-width: 480px) {
+  html { font-size: 81.3%; }
+}
+@media(max-width: 360px) {
+  html { font-size: 75%; }
+}
+
+/*========================================
+
+  body
+
+========================================*/
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: sans-serif;
+  font-feature-settings : 'palt' 1;
+  color: #333;
+  background: #141414;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*========================================
+
+  Anchor Text
+
+========================================*/
+a {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/*========================================
+
+  Break Set
+
+========================================*/
+.b36 { display: none; }
+.b48 { display: none; }
+.b64 { display: none; }
+.b96 { display: none; }
+.nb96 { display: block; }
+
+@media(max-width:1080px) {
+  .b96 { display: block; }
+  .nb96 { display: none; }
+}
+@media(max-width:640px) {
+  .b64 { display: block; }
+  .nb64 { display: none; }
+}
+@media(max-width:480px) {
+  .b48 { display: block; }
+  .nb48 { display: none; }
+}
+@media(max-width:359px) {
+  .b36 { display: block; }
+  .nb36 { display: none; }
+}
+
+/*========================================
+
+  .footer
+
+========================================*/
+.footer {
+  overflow: hidden;
+  padding: 38px 0;
+  background: #1a1a1a;
+}
+.footer small {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.0;
+  color: #b0b0b0;
+}
+
+@media(max-width:480px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+/*========================================
+
+  box-sizing
+
+========================================*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
