@@ -51,10 +51,11 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  font-family: sans-serif;
+  font-family:"Arial", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;　/* 游ゴシック(体)の時 */
   font-feature-settings : 'palt' 1;
-  color: #333;
-  background: #141414;
+  /* color: #333; */
+  /* background: #141414; */
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
 }
@@ -64,12 +65,12 @@ body {
   Anchor Text
 
 ========================================*/
-a {
+/* a {
   text-decoration: underline;
 }
 a:hover {
   text-decoration: none;
-}
+} */
 
 /*========================================
 
@@ -78,7 +79,7 @@ a:hover {
 ========================================*/
 .b36 { display: none; }
 .b48 { display: none; }
-.b64 { display: none; }
+.b64 { display: none !important; }
 .b96 { display: none; }
 .nb96 { display: block; }
 
@@ -87,7 +88,7 @@ a:hover {
   .nb96 { display: none; }
 }
 @media(max-width:640px) {
-  .b64 { display: block; }
+  .b64 { display: block;}
   .nb64 { display: none; }
 }
 @media(max-width:480px) {
@@ -104,7 +105,7 @@ a:hover {
   .footer
 
 ========================================*/
-.footer {
+/* .footer {
   overflow: hidden;
   padding: 38px 0;
   background: #1a1a1a;
@@ -120,7 +121,7 @@ a:hover {
   .footer {
     text-align: center;
   }
-}
+} */
 
 /*========================================
 

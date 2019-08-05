@@ -1,0 +1,830 @@
+/* フォント：游ゴシック（メイン）　
+　　　　　TBカリグラゴシック Std（大見出し）　
+　　　　　TA-ことだまR（7つのお約束　見出し）
+色：薄ピンク（メインカラー） #eab1b1
+　　 薄茶色（サブカラー）　# ecceb2
+　　 濃ピンク（アクセントカラー） #F05694　  */
+
+/* 1366 */
+.container{
+  width: 85.3%;  /*1166*/
+  margin: 0 auto;
+}
+
+.sa {
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa-lr {
+  transform: translate(-100px, 0);
+}
+
+.sa-ll {
+  transform: translate(100px, 0);
+}
+
+.sa-ld {
+  transform: translate(0, -100px);
+}
+
+.sa-lu {
+  transform: translate(0, -100px);
+}
+ /* ====================================================================
+
+      header
+
+=================================================================== */
+.header-inner{
+  margin:0 7.1%;
+}
+
+.catchcopy{
+  margin:1% 0;
+}
+
+.header-content{/*1172*/
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 1.9%;
+}
+
+.header-left{/*210*/
+  width: 17.9%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-left>img{
+  width:40.9%;
+}
+
+.header-left>h1>img{
+  width: 85.4%;
+  margin-left:18px;
+}
+
+.header-right{/*522*/
+  /* width: 44.5%; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-right-icons{/*196*/
+  /* width: 37.5%; */
+}
+
+.header-right-icons a{
+  display: inline-block;
+  /* width: 48.9%; */
+  width: 45.5%;
+}
+
+.header-right-icons a:last-of-type{
+  margin-left: 14px;
+}
+
+.header-right-icons>a>img{
+  width: 100%;
+}
+
+.call{
+}
+
+.header-inner nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.header-inner nav ul li{
+  margin: 0 auto;
+  width:100%;
+  padding: 7.5px 0;
+  border-left: 1px solid #a7a7a7;
+}
+
+.header-inner nav ul li:last-of-type{
+  border-right: 1px solid #a7a7a7;
+}
+
+.header-inner nav ul li a{
+  width: 100%;
+  padding: 7.5px 0;
+}
+/* ====================================================================
+
+     main_visual
+
+=================================================================== */
+.main-visual{
+  position: relative;
+}
+
+.main-visual>img{
+  width:100%;
+}
+
+.main-catchcopy{
+  width: 65.5%;
+  position: absolute;
+  right: 2.5%;
+  bottom: 12%;
+}
+
+.main-catchcopy img{
+  width: 100%;
+}
+
+/* ====================================================================
+
+     contact
+
+=================================================================== */
+.contact,.contact2{
+  background-image: url('../img/contact-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.google-map{/*422*/
+  width: 30.8%;
+  margin-left: 9.8%;
+  margin-top: 5.85%;
+  margin-bottom: 5.27%;
+}
+
+.google-map>a{
+  width: 100%;
+}
+
+.google-map>a>img{
+  width: 100%;
+}
+
+.detail{/*580*/
+  width:42.4%;
+  margin-right: 10.2%;
+  margin-top: 5.8%;
+  margin-bottom: 5.27%;
+}
+
+.detail h2{
+  font-family: "TBカリグラゴシック Std";
+  font-weight: bold;
+  font-size: 1.875rem;
+  /* line-height: 2; */
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.detail>a:first-of-type{
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #f05694;
+}
+
+.detail>a:first-of-type>img{
+  /* width: 7.9%; */
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.detail p:first-of-type{
+  font-size:0.93rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.detail p:nth-of-type(2){
+  font-size:0.93rem;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.detail p:last-of-type{
+  font-size:0.93rem;
+  color: #000000;
+}
+
+.detail table{
+ width:100%;
+ text-align: center;
+ margin: 3.5% 0 7%;
+}
+
+.detail table thead{
+  background-color: #ecceb2;
+}
+
+.detail table, .detail td, .detail th{
+  border: 2px solid #f05694;
+  /* color: #f05694; */
+}
+
+.detail table thead tr th:first-of-type{
+  font-size:0.93rem;
+  line-height: 2.66;
+  font-weight: bold;
+  color: #f05694;
+}
+
+.detail table thead tr th:not(:first-of-type){
+  font-size:1.25rem;
+  line-height: 2;
+  font-weight: bold;
+  color: #f05694;
+}
+
+.detail table tbody tr td:first-of-type{
+  font-size:0.93rem;
+  line-height: 2.66;
+  color: #000000;
+}
+
+.detail table tbody tr td:not(:first-of-type){
+  font-size:1.56rem;
+  line-height: 1.6;
+  font-weight: bold;
+  color: #f05694;
+}
+
+.to-access{
+  width: 37.2%;
+  /* margin: 0 0 0 auto; */
+}
+
+.to-access img{
+  width:100%;
+}
+/* ====================================================================
+
+     icons
+
+=================================================================== */
+.icons{
+  background-image:url('../img/icon-back.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon{/*455*/
+  width: 33%;
+  text-align: center;
+}
+
+.icon:first-of-type{
+  border-right: 2px solid #ffffff;
+}
+
+.icon:last-of-type{
+  border-left: 2px solid #ffffff;
+}
+
+.icon-inner{/*242*/
+  width: 53.1%;
+  margin: 17.5% auto 16.2%;
+}
+
+.icon-inner>img{/*121*/
+  width:58.6%;
+}
+
+.icon-inner p{
+  font-size:1.25rem;
+  line-height: 2.2;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.icon-inner h2{
+  font-size:1.56rem;
+  /* line-height: 3; */
+  font-weight:bold;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.icon-inner a{
+  margin-top: 5%;
+  display: inline-block;
+  width: 100%;
+}
+
+.icon-inner a img{
+  width: 100%;
+}
+
+/* ====================================================================
+
+     reasons
+
+=================================================================== */
+.reasons{/*1166*/
+  width: 85.3%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reasons-ttl{
+  margin-top: 5.14%;
+}
+
+.reasons-ttl img{
+  width: 20%;
+  margin-bottom:1%;
+}
+
+.reasons-ttl h2{
+  font-family: "TBカリグラゴシック Std";
+  font-size:2.81rem;
+  color: #000000;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  margin-bottom: 6.3%;
+}
+
+.cost-performance h3,.latest-machine h3{
+  font-family: "TBカリグラゴシック Std";
+  text-align: left;
+  font-size:2.18rem;
+  color: #000000;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.cost-performance h3 span,.latest-machine h3 span{
+  color: #f05694;
+}
+
+.each-reason{/*735*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.each-reason p {
+  width: 63%;
+  font-size:1.12rem;
+  line-height: 2;
+  font-weight:500;
+  letter-spacing: 0.06em;
+  color: #000000;
+border: 1px solid #F05694;
+padding: 33px;
+position: relative;
+}
+
+.each-reason p span{
+  font-size:1.43rem;
+  line-height: 1.56;
+  font-weight:500;
+  letter-spacing: 0.06em;
+  color: #ff0000;
+}
+
+.each-reason p::before {
+background-color: #ffffff;
+font-size:1.68rem;
+line-height: 1.77;
+font-weight:400;
+letter-spacing: 0.06em;
+color: #F05694;
+font-weight: bold;
+left: 40%;
+padding: 3px 10px;
+position: absolute;
+top: -28px;
+}
+
+.each-reason:first-of-type p::before{
+  content: "安さの秘訣";
+}
+
+.each-reason:nth-of-type(2) p::before{
+  content: "無駄な経費をカット" !important;
+  left: 33%!important;
+}
+
+.latest-machine .each-reason:last-of-type p::before{
+  content: "クオリティーの高い光脱毛";
+  left: 25%;
+}
+
+.each-reason img{/*400*/
+width: 34.3%;
+}
+
+.cost-performance table{
+  margin: 2.74% 0 9.09%;
+  width: 100%;
+  border: 2px solid #a7a7a7;
+}
+
+.cost-performance table tbody tr:first-of-type{
+  background-color:#eab1b1;
+  color: #ffffff;
+}
+
+.cost-performance table tbody tr:not(:first-of-type){
+  background-color:#fef6ee;
+}
+
+.cost-performance table thead tr th,.cost-performance table tbody tr td{
+  border: 2px solid #a7a7a7;
+}
+
+.cost-performance table thead tr th{
+  font-size:1.25rem;
+  line-height: 3;
+  font-weight:500;
+  color: #000000;
+}
+
+.cost-performance table thead tr th:nth-of-type(3){
+  font-size:0.93rem;
+  line-height: 4;
+}
+
+.cost-performance table tbody tr:first-of-type td:first-of-type,
+.cost-performance table tbody tr:nth-of-type(2) td:first-of-type,
+.cost-performance table tbody tr:nth-of-type(3) td:first-of-type,
+.cost-performance table tbody tr:nth-of-type(4) td:first-of-type,
+.cost-performance table tbody tr:nth-of-type(5) td:first-of-type{
+  width: 16.2%;
+  font-size:1.875rem;
+  line-height: 3;
+  font-weight:500;
+  color: #000000;
+}
+
+.cost-performance table tbody tr:first-of-type td:first-of-type{
+  color:#f05694;
+}
+
+.cost-performance table tbody tr:first-of-type td:nth-of-type(2){
+  font-size:1.875rem;
+  /* line-height: 0.8; */
+  font-weight:500;
+  vertical-align: bottom;
+}
+
+.cost-performance table tbody tr:first-of-type td:nth-of-type(2) small{
+  font-size:1.25rem;
+  /* line-height: 1.2; */
+  font-weight:500;
+}
+
+.cost-performance table tbody tr:first-of-type td:nth-of-type(3){
+  font-size:1.875rem;
+  /* line-height: 1.6; */
+  font-weight:500;
+  letter-spacing: 0.06em;
+}
+
+.cost-performance table tbody tr:first-of-type td:nth-of-type(4){
+  font-size:1.56rem;
+  /* line-height: 1.92; */
+  font-weight:500;
+  letter-spacing: 0.06em;
+}
+
+.cost-performance table tbody tr:first-of-type td:nth-of-type(5){
+  font-size:1.375rem;
+  /* line-height: 1.3; */
+  font-weight:500;
+  letter-spacing: 0.06em;
+}
+
+.cost-performance table tbody tr:nth-of-type(2) td:nth-of-type(2),
+.cost-performance table tbody tr:nth-of-type(3) td:nth-of-type(2),
+.cost-performance table tbody tr:nth-of-type(4) td:nth-of-type(2),
+.cost-performance table tbody tr:nth-of-type(5) td:nth-of-type(2),
+.cost-performance table tbody tr:nth-of-type(2) td:nth-of-type(3),
+.cost-performance table tbody tr:nth-of-type(3) td:nth-of-type(3),
+.cost-performance table tbody tr:nth-of-type(4) td:nth-of-type(3),
+.cost-performance table tbody tr:nth-of-type(5) td:nth-of-type(3),
+.cost-performance table tbody tr:nth-of-type(2) td:nth-of-type(4),
+.cost-performance table tbody tr:nth-of-type(3) td:nth-of-type(4),
+.cost-performance table tbody tr:nth-of-type(4) td:nth-of-type(4),
+.cost-performance table tbody tr:nth-of-type(5) td:nth-of-type(4){
+  font-size:1.56rem;
+  /* line-height: 1.92; */
+  font-weight:500;
+  letter-spacing: 0.06em;
+}
+
+.cost-performance table tbody tr:nth-of-type(2) td:nth-of-type(5),
+.cost-performance table tbody tr:nth-of-type(3) td:nth-of-type(5),
+.cost-performance table tbody tr:nth-of-type(4) td:nth-of-type(5),
+.cost-performance table tbody tr:nth-of-type(5) td:nth-of-type(5){
+  font-size:1.25rem;
+  /* line-height: 2.4; */
+  font-weight:500;
+  letter-spacing: 0.06em;
+}
+
+table.machine-comparison{
+  width: 100%;
+  margin: 2.74% 0 9%;
+}
+
+table.machine-comparison,
+table.machine-comparison thead tr th,
+table.machine-comparison tbody tr td{
+  border: 2px solid #a7a7a7;
+}
+
+table.machine-comparison span{
+  font-size:2.15rem;
+  font-weight:500;
+  color: #000000;
+}
+
+table.machine-comparison thead tr th{
+  font-size:1.43rem;
+  line-height: 3;
+  font-weight:500;
+  color: #000000;
+}
+
+table.machine-comparison thead tr th:last-of-type{
+  color: #ffffff;
+}
+
+table.machine-comparison tbody tr:first-of-type td:first-of-type,
+table.machine-comparison tbody tr:nth-of-type(2) td:first-of-type,
+table.machine-comparison tbody tr:nth-of-type(3) td:first-of-type,
+table.machine-comparison tbody tr:nth-of-type(4) td:first-of-type{
+  width: 14%;
+  font-size:1.56rem;
+  line-height: 4.8;
+  font-weight:500;
+  color: #000000;
+}
+
+table.machine-comparison tbody tr:first-of-type td:nth-of-type(2),
+table.machine-comparison tbody tr:nth-of-type(2) td:nth-of-type(2),
+table.machine-comparison tbody tr:nth-of-type(3) td:nth-of-type(2),
+table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(2),
+table.machine-comparison tbody tr:first-of-type td:nth-of-type(3),
+table.machine-comparison tbody tr:nth-of-type(2) td:nth-of-type(3),
+table.machine-comparison tbody tr:nth-of-type(3) td:nth-of-type(3),
+table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(3),
+table.machine-comparison tbody tr:first-of-type td:nth-of-type(4),
+table.machine-comparison tbody tr:nth-of-type(2) td:nth-of-type(4),
+table.machine-comparison tbody tr:nth-of-type(3) td:nth-of-type(4),
+table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
+  font-size:1.25rem;
+  /* line-height: 2.7; */
+  font-weight:500;
+  color: #000000;
+}
+
+table.machine-comparison tbody tr:first-of-type td:nth-of-type(2),
+table.machine-comparison tbody tr:nth-of-type(2) td:nth-of-type(2),
+table.machine-comparison tbody tr:nth-of-type(3) td:nth-of-type(2),
+table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(2),
+table.machine-comparison tbody tr:first-of-type td:nth-of-type(3),
+table.machine-comparison tbody tr:nth-of-type(2) td:nth-of-type(3),
+table.machine-comparison tbody tr:nth-of-type(3) td:nth-of-type(3),
+table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(3){
+  background-color: #fef6ee;
+}
+
+table.machine-comparison thead tr th:last-of-type,
+table.machine-comparison tbody tr:first-of-type td:nth-of-type(4),
+table.machine-comparison tbody tr:nth-of-type(2) td:nth-of-type(4),
+table.machine-comparison tbody tr:nth-of-type(3) td:nth-of-type(4),
+table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
+  color: #ffffff;
+  background-color: #eab1b1;
+}
+
+/* ====================================================================
+
+     promise
+
+=================================================================== */
+.declaration, .promise{
+  background-image: url('../img/promise-back.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.declaration{
+ text-align: center;
+}
+
+.declaration p:first-of-type{
+  padding:7% 0 2%;
+  font-family:　"TA-ことだまR";
+  font-size:2.18rem;
+  line-height: 1.43;
+  font-weight:500;
+  color: #3d3d3d;
+  letter-spacing: 0.06em;
+}
+
+.declaration p:last-of-type{
+  padding-bottom: 3.5%;
+  font-size:1.25rem;
+  line-height: 2;
+  font-weight:500;
+  color: #000000;
+  letter-spacing: 0.06em;
+}
+
+.promise{
+  padding-bottom: 4%;
+}
+
+.promise-inner{
+  width: 85.3%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.promise-inner>img{
+  width: 24%;
+  margin: 4% 0 4%;
+}
+
+.seven-promises{
+  width: 92.6%;/*1080*/
+  margin: 0 auto;
+  border: 2px solid #F05694;
+  border-radius: 40px;
+  padding: 4.6% 6.48% 3.7% 7.96%;
+  position: relative;
+}
+
+.seven-promises::before {
+font-family:"TA-ことだまR";
+content: "7つのお約束";
+background-color: #ffffff;
+font-size:2.5rem;
+font-weight:500;
+letter-spacing: 0.06em;
+color: #F05694;
+/* font-weight: bold; */
+left: 38%;
+padding: 3px 10px;
+position: absolute;
+top: -28px;
+}
+
+.each-promise{
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 5%;
+}
+
+.each-promise>img{
+ width: 7.5%;
+ margin-right: 4%;
+}
+
+.each-promise-inner h3{
+  font-size:1.875rem;
+  line-height: 2.3;
+  font-weight:500;
+  color: #F05694;
+  letter-spacing: 0.06em;
+}
+
+.each-promise-inner p{
+  font-size:1.06rem;
+  line-height: 1.4;
+  font-weight:500;
+  color: #000000;
+}
+
+.seven-promises>a{
+  width: 41%;
+}
+
+/* ====================================================================
+
+     blogs
+
+=================================================================== */
+.blogs{
+ width: 85.3%;
+ margin:0 auto;
+ text-align: center;
+}
+
+.blogs img{
+ margin-top:5%;
+ width:13.8%;
+}
+
+.blogs h2{
+  font-size:2.5rem;
+  line-height: 1.5;
+  color: #000000;
+  letter-spacing: 0.06em;
+}
+
+.articles{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogs>a{
+  display: inline-block;
+  width: 13%;
+  padding: 2% 0 6.1%;
+}
+
+.blogs>a>img{
+  width: 100%;
+}
+
+/* ====================================================================
+
+     contact2
+
+=================================================================== */
+.contact2{
+  background-image: url('../img/contact2-back.jpg')!important;
+}
+
+/* ====================================================================
+
+     footer
+
+=================================================================== */
+footer{
+  background-color: #ecceb2;
+}
+
+footer>nav>ul{
+  padding: 6.8% 20.66% 1.1% 18.3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer>nav>ul>li>a{
+  font-size:1.06rem;
+  color: #ffffff;;
+  letter-spacing: 0.06em;
+}
+
+.sns{
+  padding: 0 7.4% 1.6% 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sns>a{
+  width: 5%;
+}
+
+.sns>a:last-of-type{
+  width: 3.7%;
+}
+
+.sns>a:not(:last-of-type){
+  padding-right: 1.5%;
+}
+
+.sns>a>img{
+  width: 100%;
+  color: #ffffff;
+}
+
+footer>p{
+  padding-bottom: 1.5%;
+  text-align:center;
+  font-size:0.75rem;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
