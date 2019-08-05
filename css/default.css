@@ -88,8 +88,8 @@ a:hover {
   .nb96 { display: none; }
 }
 @media(max-width:640px) {
-  .b64 { display: block;}
-  .nb64 { display: none; }
+  .b64 { display: block!important;}
+  .nb64 { display: none!important; }
 }
 @media(max-width:480px) {
   .b48 { display: block; }

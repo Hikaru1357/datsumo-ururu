@@ -5,12 +5,6 @@
 　　 薄茶色（サブカラー）　# ecceb2
 　　 濃ピンク（アクセントカラー） #F05694　  */
 
-/* 1366 */
-.container{
-  width: 85.3%;  /*1166*/
-  margin: 0 auto;
-}
-
 .sa {
   opacity: 0;
   transition: all 1.2s ease;
@@ -52,11 +46,12 @@
 .header-content{/*1172*/
   display: flex;
   justify-content:space-between;
+  align-items: center;
   margin-bottom: 1.9%;
 }
 
 .header-left{/*210*/
-  width: 17.9%;
+  /* width: 17.9%; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -66,15 +61,19 @@
   width:40.9%;
 }
 
-.header-left>h1>img{
-  width: 85.4%;
+.header-left>h1{
+  width: 50%;
   margin-left:18px;
+}
+
+.header-left>h1>img{
+  width: 100%;
 }
 
 .header-right{/*522*/
   /* width: 44.5%; */
   display: flex;
-  justify-content: flex-end;
+  justify-content:flex-end;
   align-items: center;
 }
 
@@ -82,14 +81,9 @@
   /* width: 37.5%; */
 }
 
-.header-right-icons a{
+.header-right-icons>a{
   display: inline-block;
-  /* width: 48.9%; */
-  width: 45.5%;
-}
-
-.header-right-icons a:last-of-type{
-  margin-left: 14px;
+  width: 48.8%;
 }
 
 .header-right-icons>a>img{
@@ -97,6 +91,35 @@
 }
 
 .call{
+  /* padding-left: 9%; */
+}
+
+.call a{
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #f05694;
+}
+
+.call a img{
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.call p:first-of-type{
+  text-align: center;
+  font-size:0.93rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.call p:not(:first-of-type){
+  font-size:0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #000000;
 }
 
 .header-inner nav ul{
@@ -121,6 +144,40 @@
   width: 100%;
   padding: 7.5px 0;
 }
+
+@media(max-width: 640px) {
+  .header-inner{
+    margin:3% 7.1% 0;
+  }
+
+  .catchcopy{
+    font-size: 0.93rem;
+    margin:2% 0;
+  }
+
+  .header-content{/*1172*/
+    margin-bottom: 1.9%;
+  }
+
+  .header-left>img{
+    width:20%;
+  }
+
+  .header-left>h1{
+    width: 30%;
+    margin-left:10px;
+  }
+
+  a .b64{
+   display: inline-block;
+  }
+
+  a .b64 i{
+    width: 100%;
+  }
+
+}
+
 /* ====================================================================
 
      main_visual
@@ -266,11 +323,30 @@
 
 .to-access{
   width: 37.2%;
-  /* margin: 0 0 0 auto; */
+  display: inline-block;
 }
 
 .to-access img{
   width:100%;
+}
+
+@media(max-width: 640px) {
+  .contact,.contact2{
+  display:block;
+ }
+
+ .google-map{
+   width: 65%;
+   padding:5.85% 0 5.27%;
+   margin: 0 auto;
+ }
+
+ .detail{
+   width: 80%;
+   padding: 5.8% 0 5.27%;
+   margin: 0 auto;
+ }
+
 }
 /* ====================================================================
 
@@ -331,6 +407,47 @@
 
 .icon-inner a img{
   width: 100%;
+}
+
+@media(max-width: 640px) {
+  .icons{
+    display: block;
+  }
+
+  .icon{
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon:first-of-type{
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .icon:last-of-type{
+    border-top: 2px solid #ffffff;
+  }
+
+  .icon-inner{/*242*/
+    width: 53.1%;
+    padding: 17.5% 0 16.2%;
+    margin:0 auto;
+  }
+
+  .icon-inner>img{/*121*/
+    width:65%;
+  }
+
+  .icon-inner p{
+    font-size:1.5rem;
+  }
+
+  .icon-inner h2{
+    font-size:1.75rem;
+  }
+
+  .icon-inner a{
+    margin-top: 8%;
+  }
 }
 
 /* ====================================================================
@@ -416,15 +533,17 @@ position: absolute;
 top: -28px;
 }
 
-.each-reason:first-of-type p::before{
+.cost-performance.each-reason:first-of-type p::before,
+.cost-performance.each-reason:nth-of-type(2) p::before{
   content: "安さの秘訣";
 }
 
-.each-reason:nth-of-type(2) p::before{
-  content: "無駄な経費をカット" !important;
-  left: 33%!important;
+.cost-performance.each-reason:nth-of-type(3) p::before{
+  content: "無駄な経費をカット" ;
+  left: 33%;
 }
 
+.latest-machine .each-reason:first-of-type p::before,
 .latest-machine .each-reason:last-of-type p::before{
   content: "クオリティーの高い光脱毛";
   left: 25%;
@@ -620,6 +739,91 @@ table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
   background-color: #eab1b1;
 }
 
+@media(max-width: 640px) {
+  .reasons{
+    text-align: center;
+  }
+
+  .reasons-ttl img{
+    width: 50%;
+    margin-bottom:3%;
+  }
+
+  .reasons-ttl h2{
+    font-size:2rem;
+    padding-bottom: 5%;
+  }
+
+  .cost-performance h3,.latest-machine h3{
+    text-align: center;
+    font-size:1.8rem;
+    padding-bottom: 4%;
+  }
+
+  .each-reason{
+    display: block;
+    text-align: center;
+  }
+
+  .each-reason p {
+    width: 98%;
+    margin: 0 auto;
+    font-size:1.12rem;
+    line-height: 2;
+    padding: 23px;
+  }
+
+  .each-reason p span{
+    font-size:1.6rem;
+  }
+
+  .latest-machine .each-reason:first-of-type p,
+  .latest-machine .each-reason:last-of-type p{
+    padding-top:70px;
+  }
+
+  .each-reason p::before {
+  font-size:1.8rem;
+  font-weight: bold;
+  left: 28%;
+  }
+
+  .cost-performance .each-reason:first-of-type p::before,
+  .cost-performance .each-reason:nth-of-type(2) p::before{
+    content: "安さの秘訣";
+  }
+
+  .cost-performance .each-reason:nth-of-type(3) p::before{
+    content: "無駄な経費をカット" ;
+    left: 12%;
+  }
+
+  .latest-machine .each-reason:first-of-type p::before,
+  .latest-machine .each-reason:last-of-type p::before{
+    content: "クオリティーの高い光脱毛";
+    left: 7%;
+  }
+
+  .each-reason img{
+    width: 70%;
+    padding-bottom: 10%;
+  }
+
+  .each-reason:nth-of-type(3) img{
+    padding-top: 8%;
+  }
+
+  .cost-performance table{
+    margin: 5% 0 15%;
+  }
+
+  table.machine-comparison{
+    width: 100%;
+    margin: 5% 0 9%;
+  }
+
+}
+
 /* ====================================================================
 
      promise
@@ -727,6 +931,67 @@ top: -28px;
   width: 41%;
 }
 
+.seven-promises>a>img{
+  width: 100%;
+}
+
+@media(max-width: 640px) {
+
+  .declaration p{
+   width: 95%;
+   margin:0 auto;
+  }
+
+  .promise{
+    padding-bottom: 10%;
+  }
+
+  .promise-inner{
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+  }
+
+  .promise-inner>img{
+    width: 50%;
+    margin: 5% 0 10%;
+  }
+
+  .seven-promises{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10% 5% 3.7% 4%;
+  }
+
+  .seven-promises::before {
+  font-size:2.5rem;
+  left: 18%;
+  top: -20px;
+  }
+
+  .each-promise{
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 9%;
+  }
+
+  .each-promise>img{
+   width: 13%;
+   margin-right: 4%;
+  }
+
+  .each-promise-inner h3{
+    line-height: 1;
+  }
+
+  .seven-promises>a{
+    width: 35%;
+  }
+
+}
+
 /* ====================================================================
 
      blogs
@@ -764,6 +1029,29 @@ top: -28px;
 
 .blogs>a>img{
   width: 100%;
+}
+
+@media(max-width: 640px) {
+  .blogs{
+   width: 85.3%;
+   margin:0 auto;
+   text-align: center;
+  }
+
+  .blogs img{
+   margin-top:5%;
+   width:26%;
+  }
+
+  .blogs h2{
+    font-size:2.0rem;
+  }
+
+  .blogs>a{
+    width: 40%;
+    padding: 2% 0 8%;
+  }
+
 }
 
 /* ====================================================================
@@ -827,4 +1115,43 @@ footer>p{
   font-size:0.75rem;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+@media(max-width: 640px) {
+
+  footer>nav>ul{
+    padding: 5%;
+  }
+
+  footer>nav>ul>li>a{
+    font-size:1rem;
+  }
+
+  .sns{
+    padding: 0 3% 3% 3%;
+  }
+
+  .sns>a{
+    width: 10%;
+  }
+
+  .sns>a:last-of-type{
+    width: 8%;
+  }
+
+  .sns>a:not(:last-of-type){
+    padding-right: 3%;
+  }
+
+  .sns>a>img{
+    width: 100%;
+  }
+
+  footer>p{
+    padding-bottom: 1.5%;
+    text-align:center;
+    font-size:0.75rem;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
 }
