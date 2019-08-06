@@ -168,11 +168,13 @@
     margin-left:10px;
   }
 
-  a .b64{
+  .sp-header{
    display: inline-block;
+   color: #F05694!important;
+   font-size: 25px;
   }
 
-  a .b64 i{
+  .sp-header i{
     width: 100%;
   }
 
@@ -533,12 +535,12 @@ position: absolute;
 top: -28px;
 }
 
-.cost-performance.each-reason:first-of-type p::before,
-.cost-performance.each-reason:nth-of-type(2) p::before{
+.cost-performance .each-reason:first-of-type p::before,
+.cost-performance .each-reason:nth-of-type(2) p::before{
   content: "安さの秘訣";
 }
 
-.cost-performance.each-reason:nth-of-type(3) p::before{
+.cost-performance .each-reason:nth-of-type(3) p::before{
   content: "無駄な経費をカット" ;
   left: 33%;
 }
@@ -739,6 +741,58 @@ table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
   background-color: #eab1b1;
 }
 
+@media(max-width: 1024px) {
+  .cost-performance .each-reason:first-of-type p::before,
+  .cost-performance .each-reason:nth-of-type(2) p::before{
+    left: 35%;
+  }
+
+  .cost-performance .each-reason:nth-of-type(3) p::before{
+    left: 23%;
+  }
+
+  .latest-machine .each-reason:first-of-type p::before,
+  .latest-machine .each-reason:last-of-type p::before{
+    left: 17%;
+  }
+}
+
+@media(max-width: 768px) {
+  .cost-performance .each-reason:first-of-type p::before,
+  .cost-performance .each-reason:nth-of-type(2) p::before{
+    left: 30%;
+  }
+
+  .cost-performance .each-reason:nth-of-type(3) p::before{
+    left: 20%;
+  }
+
+  .latest-machine .each-reason:first-of-type p::before,
+  .latest-machine .each-reason:last-of-type p::before{
+    left: 12%;
+  }
+}
+
+@media(max-width: 414px) {
+  .cost-performance .each-reason:first-of-type p::before,
+  .cost-performance .each-reason:nth-of-type(2) p::before{
+    left: 28%;
+  }
+}
+
+@media(max-width: 436px) {
+  .latest-machine .each-reason:first-of-type p,
+  .latest-machine .each-reason:last-of-type p{
+    padding-top:70px ;
+  }
+}
+
+@media(max-width: 1250px) {
+  .each-reason{
+    margin: 6% 0;
+  }
+}
+
 @media(max-width: 640px) {
   .reasons{
     text-align: center;
@@ -777,30 +831,18 @@ table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
     font-size:1.6rem;
   }
 
-  .latest-machine .each-reason:first-of-type p,
-  .latest-machine .each-reason:last-of-type p{
-    padding-top:70px;
-  }
-
   .each-reason p::before {
   font-size:1.8rem;
   font-weight: bold;
   left: 28%;
   }
 
-  .cost-performance .each-reason:first-of-type p::before,
-  .cost-performance .each-reason:nth-of-type(2) p::before{
-    content: "安さの秘訣";
-  }
-
   .cost-performance .each-reason:nth-of-type(3) p::before{
-    content: "無駄な経費をカット" ;
     left: 12%;
   }
 
   .latest-machine .each-reason:first-of-type p::before,
   .latest-machine .each-reason:last-of-type p::before{
-    content: "クオリティーの高い光脱毛";
     left: 7%;
   }
 
@@ -928,11 +970,38 @@ top: -28px;
 }
 
 .seven-promises>a{
-  width: 41%;
+  display:inline-block;
+  width: 46%;
 }
 
 .seven-promises>a>img{
   width: 100%;
+}
+
+@media(max-width: 1100px){
+  .each-promise>img{
+   width: 13%;
+   margin-right: 4%;
+  }
+
+  .each-promise-inner h3{
+    line-height: 1;
+  }
+  .promise-inner>img{
+    width: 50%;
+    margin: 5% 0 8%;
+  }
+
+  .seven-promises{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10% 5% 3.7% 4%;
+  }
+
+  .seven-promises::before {
+  font-size:2.5rem;
+  left: 33%;
+  }
 }
 
 @media(max-width: 640px) {
@@ -987,7 +1056,7 @@ top: -28px;
   }
 
   .seven-promises>a{
-    width: 35%;
+    width: 65%;
   }
 
 }
@@ -1047,6 +1116,10 @@ top: -28px;
     font-size:2.0rem;
   }
 
+  .articles{
+    display: block;
+  }
+
   .blogs>a{
     width: 40%;
     padding: 2% 0 8%;
@@ -1061,6 +1134,19 @@ top: -28px;
 =================================================================== */
 .contact2{
   background-image: url('../img/contact2-back.jpg')!important;
+}
+
+.back-to-top{
+  position: fixed;
+  bottom: 1%;
+  right: 4%;
+  display: inline-block;
+  font-size: 30px;
+  color:#F05694;
+}
+
+.back-to-top i{
+  width: 100%;
 }
 
 /* ====================================================================

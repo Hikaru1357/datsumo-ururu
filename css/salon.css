@@ -1,0 +1,713 @@
+/* フォント：游ゴシック（メイン）　
+　　　　　TBカリグラゴシック Std（大見出し）　
+　　　　　TA-ことだまR（7つのお約束　見出し）
+色：薄ピンク（メインカラー） #eab1b1
+　　 薄茶色（サブカラー）　# ecceb2
+　　 濃ピンク（アクセントカラー） #F05694　  */
+
+.sa {
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa-lr {
+  transform: translate(-100px, 0);
+}
+
+.sa-ll {
+  transform: translate(100px, 0);
+}
+
+.sa-ld {
+  transform: translate(0, -100px);
+}
+
+.sa-lu {
+  transform: translate(0, -100px);
+}
+ /* ====================================================================
+
+      header
+
+=================================================================== */
+.header-inner{
+  margin:0 7.1%;
+}
+
+.catchcopy{
+  margin:1% 0;
+}
+
+.header-content{/*1172*/
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 1.9%;
+}
+
+.header-left{/*210*/
+  /* width: 17.9%; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-left>img{
+  width:40.9%;
+}
+
+.header-left>h1{
+  width: 50%;
+  margin-left:18px;
+}
+
+.header-left>h1>img{
+  width: 100%;
+}
+
+.header-right{/*522*/
+  /* width: 44.5%; */
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.header-right-icons{/*196*/
+  /* width: 37.5%; */
+}
+
+.header-right-icons>a{
+  display: inline-block;
+  width: 48.8%;
+}
+
+.header-right-icons>a>img{
+  width: 100%;
+}
+
+.call{
+  /* padding-left: 9%; */
+}
+
+.call a{
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #f05694;
+}
+
+.call a img{
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.call p:first-of-type{
+  text-align: center;
+  font-size:0.93rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.call p:not(:first-of-type){
+  font-size:0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.header-inner nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.header-inner nav ul li{
+  margin: 0 auto;
+  width:100%;
+  padding: 7.5px 0;
+  border-left: 1px solid #a7a7a7;
+}
+
+.header-inner nav ul li:last-of-type{
+  border-right: 1px solid #a7a7a7;
+}
+
+.header-inner nav ul li a{
+  width: 100%;
+  padding: 7.5px 0;
+}
+
+@media(max-width: 640px) {
+  .header-inner{
+    margin:3% 7.1% 0;
+  }
+
+  .catchcopy{
+    font-size: 0.93rem;
+    margin:2% 0;
+  }
+
+  .header-content{/*1172*/
+    margin-bottom: 1.9%;
+  }
+
+  .header-left>img{
+    width:20%;
+  }
+
+  .header-left>h1{
+    width: 30%;
+    margin-left:10px;
+  }
+
+  .sp-header{
+   display: inline-block;
+   color: #F05694!important;
+   font-size: 25px;
+  }
+
+  .sp-header i{
+    width: 100%;
+  }
+
+}
+
+/* ====================================================================
+
+     contact
+
+=================================================================== */
+.contact,.contact2{
+  background-image: url('../img/contact-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.google-map{/*422*/
+  width: 30.8%;
+  margin-left: 9.8%;
+  margin-top: 5.85%;
+  margin-bottom: 5.27%;
+}
+
+.google-map>a{
+  width: 100%;
+}
+
+.google-map>a>img{
+  width: 100%;
+}
+
+.detail{/*580*/
+  width:42.4%;
+  margin-right: 10.2%;
+  margin-top: 5.8%;
+  margin-bottom: 5.27%;
+}
+
+.detail h2{
+  font-family: "TBカリグラゴシック Std";
+  font-weight: bold;
+  font-size: 1.875rem;
+  /* line-height: 2; */
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.detail>a:first-of-type{
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #f05694;
+}
+
+.detail>a:first-of-type>img{
+  /* width: 7.9%; */
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.detail p:first-of-type{
+  font-size:0.93rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.detail p:nth-of-type(2){
+  font-size:0.93rem;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.detail p:last-of-type{
+  font-size:0.93rem;
+  color: #000000;
+}
+
+.detail table{
+ width:100%;
+ text-align: center;
+ margin: 3.5% 0 7%;
+}
+
+.detail table thead{
+  background-color: #ecceb2;
+}
+
+.detail table, .detail td, .detail th{
+  border: 2px solid #f05694;
+  /* color: #f05694; */
+}
+
+.detail table thead tr th:first-of-type{
+  font-size:0.93rem;
+  line-height: 2.66;
+  font-weight: bold;
+  color: #f05694;
+}
+
+.detail table thead tr th:not(:first-of-type){
+  font-size:1.25rem;
+  line-height: 2;
+  font-weight: bold;
+  color: #f05694;
+}
+
+.detail table tbody tr td:first-of-type{
+  font-size:0.93rem;
+  line-height: 2.66;
+  color: #000000;
+}
+
+.detail table tbody tr td:not(:first-of-type){
+  font-size:1.56rem;
+  line-height: 1.6;
+  font-weight: bold;
+  color: #f05694;
+}
+
+.to-access{
+  width: 37.2%;
+  display: inline-block;
+}
+
+.to-access img{
+  width:100%;
+}
+
+@media(max-width: 640px) {
+  .contact,.contact2{
+  display:block;
+ }
+
+ .google-map{
+   width: 65%;
+   padding:5.85% 0 5.27%;
+   margin: 0 auto;
+ }
+
+ .detail{
+   width: 80%;
+   padding: 5.8% 0 5.27%;
+   margin: 0 auto;
+ }
+
+}
+
+/* ====================================================================
+
+     main-visual
+
+=================================================================== */
+.main-visual{
+  position: relative;
+  width: 100%;
+}
+
+.main-visual img{
+  width: 100%;
+}
+
+.main-visual h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 3.125rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+/* ====================================================================
+
+     about
+
+=================================================================== */
+.about{
+  background-image: url('../img/salon-about-back.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.about-inner{
+  width: 78.4%;
+  margin:0 auto;
+  padding:100px 0 78px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.about-inner .about-left img{
+ width: 32%;
+}
+
+.about-inner .about-left h2{
+  font-size:2.18rem;
+  line-height: 1.14;
+  /* font-weight: 500; */
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-bottom: 5%;
+}
+
+.about-inner .about-left p{
+  text-align: left;
+  font-size:1.56rem;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.about-inner>img{
+ width: 31.5%;
+ margin-left: 2%;
+}
+
+/* ====================================================================
+
+     access
+
+=================================================================== */
+.access{/*1080*/
+  width: 79%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.access img{
+  width:18%;
+  padding-top:8.3%;
+}
+
+.access h2{
+  margin-bottom: 3.5%;
+  font-size:2.81rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.access h3{
+  text-align: left;
+  margin:3.7% 0 2.7%;
+  font-size:1.875rem;
+  letter-spacing: 0.06em;
+  color: #f05694;
+}
+
+.access p{
+  text-align: left;
+  padding-bottom: 8.9%;
+  font-size:1.25rem;
+  line-height: 2;
+  color: #000000;
+}
+
+/* ====================================================================
+
+     voice
+
+=================================================================== */
+.voice{
+ text-align: center;
+}
+
+.voice img{
+ width: 10.2%;
+}
+
+.voice h2{
+  margin-bottom: 2.3%;
+  font-size:2.81rem;
+  color: #000000;
+}
+
+.voices{/*1080*/
+  padding-bottom: 5%;
+  width: 79%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.each-voice{/*525*/
+  padding-bottom: 2%;
+  margin-bottom: 2.7%;
+  width: 48.6%;
+  background-color: #eab1b1;
+  border-radius: 30px;
+}
+
+.each-voice>p{
+  font-size:1.06rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 5.3% 0 4%;
+}
+
+.each-voice>p span{
+  font-size:1.06rem;
+  letter-spacing: 0.06em;
+  color: #ff0000;
+}
+
+.voice-content{/*492*/
+  width: 93.7%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  min-height: 170px;
+  text-align: left;
+  position: relative;
+}
+
+.voice-content>p:first-of-type{
+  padding:5.3% 0 0 4.1%;
+  font-size:0.93rem;
+  line-height: 1.466;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.voice-content a{
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+  /* padding:0 0 20px 20px; */
+}
+
+.voice-content a img{
+  width: 22px;
+}
+
+.voice-content a p{
+  margin-left: 5px;
+  display: inline-block;
+  font-size:0.93rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+/* ====================================================================
+
+     greeting
+
+=================================================================== */
+.greeting{
+ background-image: url('../img/salon-greeting-back.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+}
+
+.greeting>img{
+ width: 16.6%;
+ margin:0 auto;
+ padding-top: 2.9%;
+}
+
+.greeting>h2{
+  padding-bottom: 2.2%;
+  font-size:2.81rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.greeting-inner{
+ text-align: left;
+ background-color: #ffffff;
+ width: 85.3%;
+ margin:0 auto;
+ border: 1px solid #F05694;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.greeting-inner img{/*456*/
+ width: 39.1%;
+ margin: 3.7% 2.8% 5.8% 3.5%;
+}
+
+.greeting-content p{
+  padding-right: 6.7%;
+  white-space: pre-wrap;
+  font-size:1rem;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.greeting-content p span{
+  font-size:1.125rem;
+  color: #F05694;
+}
+
+.greeting-content p b{
+  font-size:1.06rem;
+  color: #000000;
+  padding: 2% 0;
+}
+
+.greeting>a{
+  display: inline-block;
+  padding: 2.5% 0 4.5%;
+  width: 30.4%;
+  margin: 0 auto;
+}
+
+.greeting>a>img{
+  width: 100%;
+}
+
+/* ====================================================================
+
+     contact2
+
+=================================================================== */
+.contact2{
+  background-image: url('../img/contact2-back.jpg')!important;
+}
+
+.back-to-top{
+  position: fixed;
+  bottom: 1%;
+  right: 4%;
+  display: inline-block;
+  font-size: 30px;
+  color:#F05694;
+}
+
+.back-to-top i{
+  width: 100%;
+}
+
+
+/* ====================================================================
+
+     footer
+
+=================================================================== */
+footer{
+  background-color: #ecceb2;
+}
+
+footer>nav>ul{
+  padding: 6.8% 20.66% 1.1% 18.3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer>nav>ul>li>a{
+  font-size:1.06rem;
+  color: #ffffff;;
+  letter-spacing: 0.06em;
+}
+
+.sns{
+  padding: 0 7.4% 1.6% 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sns>a{
+  width: 5%;
+}
+
+.sns>a:last-of-type{
+  width: 3.7%;
+}
+
+.sns>a:not(:last-of-type){
+  padding-right: 1.5%;
+}
+
+.sns>a>img{
+  width: 100%;
+  color: #ffffff;
+}
+
+footer>p{
+  padding-bottom: 1.5%;
+  text-align:center;
+  font-size:0.75rem;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+@media(max-width: 640px) {
+
+  footer>nav>ul{
+    padding: 5%;
+  }
+
+  footer>nav>ul>li>a{
+    font-size:1rem;
+  }
+
+  .sns{
+    padding: 0 3% 3% 3%;
+  }
+
+  .sns>a{
+    width: 10%;
+  }
+
+  .sns>a:last-of-type{
+    width: 8%;
+  }
+
+  .sns>a:not(:last-of-type){
+    padding-right: 3%;
+  }
+
+  .sns>a>img{
+    width: 100%;
+  }
+
+  footer>p{
+    padding-bottom: 1.5%;
+    text-align:center;
+    font-size:0.75rem;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+}
