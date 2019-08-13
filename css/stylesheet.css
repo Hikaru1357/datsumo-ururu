@@ -2209,8 +2209,58 @@ form a{
   }
 }
 
+/* ================================================================
+
+   otoiawase-done
+   otoiawase-confirm
+
+=================================================================== */
+.contact-done,.contact-confirm{
+  width: 80%;
+  margin: 8% auto;
+  text-align: center;
+}
+
+.contact-done h2,.contact-confirm h2{
+  text-align: left;
+  font-size:2rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-bottom: 3%;
+}
+
+.contact-done p,.contact-confirm p{
+  text-align: left;
+  font-size:1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-bottom: 5%;
+}
 
 
+.contact-done a,.contact-confirm a{
+  display: inline-block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 3%;
+  font-size:2rem;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #F05694;
+  border-radius: 30px;
+}
+
+.contact-confirm a:last-of-type{
+  margin-top: 4%;
+}
+
+@media(max-width: 640px){
+  .contact-done a{
+    font-size:1.25rem;
+    width: 80%;
+  }
+}
 
 
 
