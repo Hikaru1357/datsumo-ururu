@@ -2208,3 +2208,109 @@ form a{
     border-radius: 20px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+/* ================================================================
+
+   q&a
+
+=================================================================== */
+.faq-to-contact{/*952*/
+  width: 69.6%;
+  margin: 6% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2% 0;
+  border-top: 3px solid #ecceb2;
+  border-bottom: 3px solid #ecceb2;
+}
+
+.faq-to-contact>p{
+  font-size:1.25rem;
+  line-height: 1.65;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-right: 3%;
+}
+
+.faq-to-contact-inner a:first-of-type{
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #f05694;
+}
+
+.faq-to-contact-inner a:first-of-type img{
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.faq-to-contact-inner a:last-of-type{
+  display: inline-block;
+  width: 97%;
+}
+
+.faq-to-contact-inner a:last-of-type img{
+  width: 100%;
+}
+
+.each-faq{
+  border: 1px solid #f05694;
+  width: 79%;
+  margin:0 auto 5%;
+}
+
+.each-faq:last-of-type{
+  margin-bottom: 8%;
+}
+
+.each-faq p:first-of-type{
+  background-color: #eab1b1;
+  font-size:1.375rem;
+  padding: 2.5% 0 2.5% 3%;
+  /* line-height: 1.81; */
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.each-faq p:last-of-type{
+  font-size:1.125rem;
+  line-height: 1.66;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 2.8% 6% 5%;
+}
+
+@media(max-width: 640px){
+  .faq-to-contact{
+    display: block;
+    padding: 4% 0;
+  }
+
+  .each-faq{
+    margin:0 auto 8%;
+  }
+
+  .each-faq:last-of-type{
+    margin-bottom: 12%;
+  }
+
+  .each-faq p:first-of-type{
+    padding: 4% 0 4% 5%;
+  }
+
+  .each-faq p:last-of-type{
+    line-height: 1.5;
+    padding: 4% 8% 4%;
+  }
+}
