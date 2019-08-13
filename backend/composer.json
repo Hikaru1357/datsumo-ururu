@@ -1,0 +1,12 @@
+{
+    "name": "takubon/backend",
+    "authors": [
+        {
+            "name": "Takumi Okubo",
+            "email": "takubon3140@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    }
+}
