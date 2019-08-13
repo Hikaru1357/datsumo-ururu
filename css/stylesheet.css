@@ -182,30 +182,6 @@
 
 /* ====================================================================
 
-     main_visual
-
-=================================================================== */
-.main-visual{
-  position: relative;
-}
-
-.main-visual>img{
-  width:100%;
-}
-
-.main-catchcopy{
-  width: 65.5%;
-  position: absolute;
-  right: 2.5%;
-  bottom: 12%;
-}
-
-.main-catchcopy img{
-  width: 100%;
-}
-
-/* ====================================================================
-
      contact
 
 =================================================================== */
@@ -350,6 +326,147 @@
  }
 
 }
+
+/* ====================================================================
+
+     contact2
+
+=================================================================== */
+.contact2{
+  background-image: url('../img/contact2-back.jpg')!important;
+}
+
+.back-to-top{
+  position: fixed;
+  bottom: 1%;
+  right: 4%;
+  display: inline-block;
+  font-size: 30px;
+  color:#F05694;
+}
+
+.back-to-top i{
+  width: 100%;
+}
+
+/* ====================================================================
+
+     footer
+
+=================================================================== */
+footer{
+  background-color: #ecceb2;
+}
+
+footer>nav>ul{
+  padding: 6.8% 20.66% 1.1% 18.3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer>nav>ul>li>a{
+  font-size:1.06rem;
+  color: #ffffff;;
+  letter-spacing: 0.06em;
+}
+
+.sns{
+  padding: 0 7.4% 1.6% 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sns>a{
+  width: 5%;
+}
+
+.sns>a:last-of-type{
+  width: 3.7%;
+}
+
+.sns>a:not(:last-of-type){
+  padding-right: 1.5%;
+}
+
+.sns>a>img{
+  width: 100%;
+  color: #ffffff;
+}
+
+footer>p{
+  padding-bottom: 1.5%;
+  text-align:center;
+  font-size:0.75rem;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+@media(max-width: 640px) {
+
+  footer>nav>ul{
+    padding: 5%;
+  }
+
+  footer>nav>ul>li>a{
+    font-size:1rem;
+  }
+
+  .sns{
+    padding: 0 3% 3% 3%;
+  }
+
+  .sns>a{
+    width: 10%;
+  }
+
+  .sns>a:last-of-type{
+    width: 8%;
+  }
+
+  .sns>a:not(:last-of-type){
+    padding-right: 3%;
+  }
+
+  .sns>a>img{
+    width: 100%;
+  }
+
+  footer>p{
+    padding-bottom: 1.5%;
+    text-align:center;
+    font-size:0.75rem;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+}
+
+/* ====================================================================
+
+     toppage
+     main_visual
+
+=================================================================== */
+.main-visual{
+  position: relative;
+}
+
+.main-visual>img{
+  width:100%;
+}
+
+.main-catchcopy{
+  width: 65.5%;
+  position: absolute;
+  right: 2.5%;
+  bottom: 12%;
+}
+
+.main-catchcopy img{
+  width: 100%;
+}
+
 /* ====================================================================
 
      icons
@@ -868,6 +985,113 @@ table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
 
 /* ====================================================================
 
+     voice
+
+=================================================================== */
+.voice{
+ text-align: center;
+}
+
+.voice img{
+ width: 10.2%;
+}
+
+.voice h2{
+  margin-bottom: 2.3%;
+  font-size:2.81rem;
+  color: #000000;
+}
+
+.voices{/*1080*/
+  padding-bottom: 5%;
+  width: 79%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.each-voice{/*525*/
+  padding-bottom: 2%;
+  margin-bottom: 2.7%;
+  width: 48.6%;
+  background-color: #eab1b1;
+  border-radius: 30px;
+}
+
+.each-voice>p{
+  font-size:1.06rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 5.3% 0 4%;
+}
+
+.each-voice>p span{
+  font-size:1.06rem;
+  letter-spacing: 0.06em;
+  color: #ff0000;
+}
+
+.voice-content{/*492*/
+  width: 93.7%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  min-height: 170px;
+  text-align: left;
+  position: relative;
+}
+
+.voice-content>p:first-of-type{
+  padding:5.3% 0 0 4.1%;
+  font-size:0.93rem;
+  line-height: 1.466;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.voice-content a{
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+  /* padding:0 0 20px 20px; */
+}
+
+.voice-content a img{
+  width: 22px;
+}
+
+.voice-content a p{
+  margin-left: 5px;
+  display: inline-block;
+  font-size:0.93rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+@media(max-width: 768px){
+
+  .voice img{
+   width: 18%;
+  }
+
+  .voice h2{
+    font-size:2rem;
+  }
+
+  .voices{
+    display: block;
+  }
+
+  .each-voice{
+    width: 100%;
+  }
+
+}
+
+/* ====================================================================
+
      promise
 
 =================================================================== */
@@ -1127,117 +1351,756 @@ top: -28px;
 
 }
 
+
+
+
+
+
+
+
+
+
 /* ====================================================================
 
-     contact2
+     tousaronnnnitsuite
+     main-under
 
 =================================================================== */
-.contact2{
-  background-image: url('../img/contact2-back.jpg')!important;
-}
-
-.back-to-top{
-  position: fixed;
-  bottom: 1%;
-  right: 4%;
-  display: inline-block;
-  font-size: 30px;
-  color:#F05694;
-}
-
-.back-to-top i{
+.main-under{
+  position: relative;
   width: 100%;
 }
 
-/* ====================================================================
-
-     footer
-
-=================================================================== */
-footer{
-  background-color: #ecceb2;
+.main-under img{
+  width: 100%;
 }
 
-footer>nav>ul{
-  padding: 6.8% 20.66% 1.1% 18.3%;
+.main-under h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 3.125rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+@media(max-width: 640px){
+  .main-under h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+}
+
+
+/* ====================================================================
+
+     about
+
+=================================================================== */
+.about{
+  background-image: url('../img/salon-about-back.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.about-inner{
+  width: 78.4%;
+  margin:0 auto;
+  padding:7.3% 0 5.7%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.about-inner .about-left img{
+ width: 32%;
+}
+
+.about-inner .about-left h2{
+  font-size:2.18rem;
+  line-height: 1.14;
+  /* font-weight: 500; */
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-bottom: 5%;
+}
+
+.about-inner .about-left p{
+  text-align: left;
+  font-size:1.56rem;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.about-inner>img{
+ width: 31.5%;
+ margin-left: 2%;
+}
+
+@media(max-width: 640px){
+
+  .about-inner{
+    width: 78.4%;
+    margin:0 auto;
+    padding:7.3% 0 5.7%;
+    display: block;
+  }
+
+  .about-inner .about-left img{
+   width: 50%;
+  }
+
+  .about-inner .about-left h2{
+    font-size:2rem;
+  }
+
+  .about-inner>img{
+   width: 50%;
+   margin-left: 0;
+   margin-top: 3%;
+  }
+}
+
+/* ====================================================================
+
+     access
+
+=================================================================== */
+.access{/*1080*/
+  width: 79%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.access img{
+  width:18%;
+  padding-top:8.3%;
+}
+
+.access h2{
+  margin-bottom: 3.5%;
+  font-size:2.81rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.access h3{
+  text-align: left;
+  margin:3.7% 0 2.7%;
+  font-size:1.875rem;
+  letter-spacing: 0.06em;
+  color: #f05694;
+}
+
+.access p{
+  text-align: left;
+  padding-bottom: 8.9%;
+  font-size:1.25rem;
+  line-height: 2;
+  color: #000000;
+}
+
+@media(max-width: 640px){
+
+  .access img{
+    width:30%;
+  }
+
+  .access h2{
+    margin-bottom: 3.5%;
+    font-size:2rem;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+
+  .access h3{
+    font-size:1.5rem;
+  }
+
+}
+
+/* ====================================================================
+
+     voice
+
+=================================================================== */
+.voice{
+ text-align: center;
+}
+
+.voice img{
+ width: 10.2%;
+}
+
+.voice h2{
+  margin-bottom: 2.3%;
+  font-size:2.81rem;
+  color: #000000;
+}
+
+.voices{/*1080*/
+  padding-bottom: 5%;
+  width: 79%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.each-voice{/*525*/
+  padding-bottom: 2%;
+  margin-bottom: 2.7%;
+  width: 48.6%;
+  background-color: #eab1b1;
+  border-radius: 30px;
+}
+
+.each-voice>p{
+  font-size:1.06rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 5.3% 0 4%;
+}
+
+.each-voice>p span{
+  font-size:1.06rem;
+  letter-spacing: 0.06em;
+  color: #ff0000;
+}
+
+.voice-content{/*492*/
+  width: 93.7%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  min-height: 170px;
+  text-align: left;
+  position: relative;
+}
+
+.voice-content>p:first-of-type{
+  padding:5.3% 0 0 4.1%;
+  font-size:0.93rem;
+  line-height: 1.466;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.voice-content a{
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+  /* padding:0 0 20px 20px; */
+}
+
+.voice-content a img{
+  width: 22px;
+}
+
+.voice-content a p{
+  margin-left: 5px;
+  display: inline-block;
+  font-size:0.93rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+
+@media(max-width: 768px){
+
+  .voice img{
+   width: 18%;
+  }
+
+  .voice h2{
+    font-size:2rem;
+  }
+
+  .voices{
+    display: block;
+  }
+
+  .each-voice{
+    width: 100%;
+  }
+
+}
+
+/* ====================================================================
+
+     greeting
+
+=================================================================== */
+.greeting{
+ background-image: url('../img/salon-greeting-back.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+}
+
+.greeting>img{
+ width: 16.6%;
+ margin:0 auto;
+ padding-top: 2.9%;
+}
+
+.greeting>h2{
+  padding-bottom: 2.2%;
+  font-size:2.81rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.greeting-inner{
+ text-align: left;
+ background-color: #ffffff;
+ width: 85.3%;
+ margin:0 auto;
+ border: 1px solid #F05694;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.greeting-inner img{/*456*/
+ width: 39.1%;
+ margin: 3.7% 2.8% 5.8% 3.5%;
+}
+
+.greeting-content p{
+  padding-right: 6.7%;
+  white-space: pre-wrap;
+  font-size:1rem;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.greeting-content p span{
+  font-size:1.125rem;
+  color: #F05694;
+}
+
+.greeting-content p b{
+  font-size:1.06rem;
+  color: #000000;
+  padding: 2% 0;
+}
+
+.greeting>a{
+  display: inline-block;
+  padding: 2.5% 0 4.5%;
+  width: 30.4%;
+  margin: 0 auto;
+}
+
+.greeting>a>img{
+  width: 100%;
+}
+
+@media(max-width: 640px){
+
+  .greeting>img{
+   width: 23%;
+  }
+
+  .greeting>h2{
+    font-size:2rem;
+  }
+
+  .greeting-inner{
+   display: block;
+   text-align: center;
+  }
+
+  .greeting-inner img{/*456*/
+   width: 50%;
+   margin:4%;
+  }
+
+  .greeting-content p{
+    text-align: left;
+    padding:0 3%;
+  }
+
+  .greeting>a{
+    padding: 7% 0;
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ================================================================
+
+   flow
+
+=================================================================== */
+.flow{
+  width: 79%;/*1080*/
+  margin:0 auto;
+}
+
+.counseling h2,.oteire h2{
+  font-family: "TBカリグラゴシック Std";
+  font-size: 2.06rem;
+  letter-spacing: 0.025em;
+  color: #000000;
+  border-left:15px solid #f05694;
+  padding-left: 2px;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 3%;
+}
+
+.counseling h2{
+  margin-top: 5.8%;
+}
+
+.oteire h2{
+  margin-top: 7.3%;
+}
+
+.counseling p,.oteire p{
+  font-size: 1.125rem;
+  line-height: 1.83;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.each-counseling-inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer>nav>ul>li>a{
-  font-size:1.06rem;
-  color: #ffffff;;
-  letter-spacing: 0.06em;
+.each-counseling-inner img{
+  width: 33.7%;
+  margin-right: 4%;
 }
 
-.sns{
-  padding: 0 7.4% 1.6% 0;
+.oteire{
+  text-align: center;
+}
+
+.each-oteire{
+  text-align: left;
+  padding: 3%;
+  border: 5px solid #eab1b1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.each-oteire img{
+  width:33%;
+}
+
+.each-oteire-inner{
+ margin-right: 5%;
+}
+
+.each-oteire-inner h3{
+  font-size: 1.625rem;
+  line-height: 0.92;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f05694;
+}
+
+.flow-arrow{
+  margin: 1% auto 2%;
+  width: 4%;
+  min-width: 30px;
+}
+
+.oteire>a{
+  display: inline-block;
+  width: 39%;
+  padding: 5.9% 0 8%;
+}
+
+.oteire>a>img{
+  width: 100%;
+}
+
+
+@media(max-width: 640px){
+
+  .counseling h2,.oteire h2{
+    font-size: 2rem;
+    border-left:10px solid #f05694;
+    padding-left: 5px;
+  }
+
+  .counseling h2{
+    margin-top: 8%;
+  }
+
+  .oteire h2{
+    margin-top: 10%;
+  }
+
+  .counseling p,.oteire p{
+    text-align: left;
+    margin: 3% auto;
+  }
+
+  .each-counseling-inner{
+    display: block;
+    text-align: center;
+  }
+
+  .each-counseling-inner img{
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .oteire{
+    text-align: center;
+  }
+
+  .each-oteire{
+    padding: 7%;
+    border: 3px solid #eab1b1;
+    display: block;
+    text-align: center;
+  }
+
+  .each-oteire img{
+    width:80%;
+  }
+
+  .each-oteire-inner{
+   margin-right: 5%;
+  }
+
+  .each-oteire-inner h3{
+    padding-bottom: 8px;
+  }
+
+  .oteire>a{
+    width: 65%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================
+
+   otoiawase
+   contact-page
+
+=================================================================== */
+.contact-inner{/*1168*/
+  width: 85.5%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-inner>img{
+  width:17.8%;
+  margin-top: 4%;
+}
+
+.contact-inner>h2{
+  font-family: "TBカリグラゴシック Std";
+  font-size: 2.5rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.contact-inner>p{
+  text-align: left;
+  margin: 4%;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.caution{
+  text-align: left;
+  padding: 2.5%;
+  background-color: #ecceb2;
+  border-radius: 30px;
+}
+
+.caution p{
+  font-size: 1.125rem;
+  padding-bottom: 1.5%;
+  line-height: 1.666;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.caution img{
+  width: 24px;
+  margin-right: 1%;
+}
+
+.phone-here{/*726*/
+  width: 62.1%;
+  margin:5% auto;
+}
+
+.phone-here>p{
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-family:　"TA-ことだまR";
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.phone-here-inner{
+  text-align:left;
+  padding: 3% 0;
+  border-top:3px solid #f05694;
+  border-bottom:3px solid #f05694;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.sns>a{
-  width: 5%;
+.phone-here-left p{
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-family:　"TA-ことだまR";
+  letter-spacing: 0.06em;
+  color: #000000;
 }
 
-.sns>a:last-of-type{
-  width: 3.7%;
+.phone-here-left a{
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #f05694;
 }
 
-.sns>a:not(:last-of-type){
-  padding-right: 1.5%;
+.phone-here-left a img{
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
-.sns>a>img{
+
+.phone-here-right p:first-of-type{
+  font-size:0.93rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.phone-here-right p:nth-of-type(2){
+  font-size:0.93rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin:5% 0;
+}
+
+.phone-here-right p:last-of-type{
+  font-size:0.93rem;
+  color: #000000;
+}
+
+@media(max-width: 640px){
+}
+
+/* ================================================================
+
+   contact-form
+
+=================================================================== */
+.contact-form{
+  background-color: #eab1b1;
+}
+
+.contact-form h2{
+  text-align: center;
+  font-size:2.18rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding:6% 0 4%;
+}
+
+.contact-form form{/*1074*/
+  width: 78.6%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form form p{
+  font-size:1.25rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+input,select,textarea{
+  font-size: 1.125rem;
+  margin: 1.5% 0 4%;
+  border: 1px solid #f05694;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+input,select{
+  height: 50px;
+}
+
+input{
+  width: 36.4%;
+}
+
+select{
+  width: 42.6%;
+}
+
+textarea{
   width: 100%;
-  color: #ffffff;
+  height: 228px;
 }
 
-footer>p{
-  padding-bottom: 1.5%;
-  text-align:center;
-  font-size:0.75rem;
+form a{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 11%;
+  width: 25.1%;
+}
+
+.button{
+  width: 100%;
+  height: 74px;
+  font-size:2.18rem;
   letter-spacing: 0.06em;
   color: #ffffff;
-}
-
-@media(max-width: 640px) {
-
-  footer>nav>ul{
-    padding: 5%;
-  }
-
-  footer>nav>ul>li>a{
-    font-size:1rem;
-  }
-
-  .sns{
-    padding: 0 3% 3% 3%;
-  }
-
-  .sns>a{
-    width: 10%;
-  }
-
-  .sns>a:last-of-type{
-    width: 8%;
-  }
-
-  .sns>a:not(:last-of-type){
-    padding-right: 3%;
-  }
-
-  .sns>a>img{
-    width: 100%;
-  }
-
-  footer>p{
-    padding-bottom: 1.5%;
-    text-align:center;
-    font-size:0.75rem;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-  }
+  background-color: #f05694;
+  border-radius: 40px;
 }
