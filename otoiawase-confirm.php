@@ -1,10 +1,17 @@
+<?php
+var_dump($_REQUEST);
+
+extract($_REQUEST);
+var_dump($name);
+
+?>
 
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <title>お問い合わせ｜難波でコスパの良い脱毛をお考えなら脱毛サロンうるる</title>
+    <title>お問い合わせ確認｜難波でコスパの良い脱毛をお考えなら脱毛サロンうるる</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
@@ -22,7 +29,8 @@
     <header>
       <div class="header-inner">
         <div class="catchcopy">
-          <p>脱毛サロン選びはこれで最後。難波でコスパの良い脱毛をお考えなら</p>
+          <p><?php echo 'タイトルです'; ?>
+            脱毛サロン選びはこれで最後。難波でコスパの良い脱毛をお考えなら</p>
         </div>
         <div class="header-content">
           <div class="header-left">
@@ -69,74 +77,47 @@
    <div class="main">
      <!-- ====================================================================
 
-           main-under
+           otoiawase-confirm
 
      =================================================================== -->
-     <section class="main-under">
-       <img src="img/salon-mainvisual.jpg" alt="うるるの内装">
-       <h1>お問い合わせ</h1>
-     </section>
-     <!-- ====================================================================
-
-           contact-page
-
-     =================================================================== -->
-     <section class="contact-page">
-       <div class="contact-inner">
-         <img src="img\contactpage-contact.png" alt="contact">
-         <h2>お問い合わせ</h2>
-         <p>ご連絡を頂きますと、通常3営業日以内に返信いたします。
-           もしも返信がない場合、うまく送信できない場合は、お電話にてご連絡ください。
-         </p>
-         <div class="caution">
-           <p><img src="img\contactpage-arrow.png" alt="">メールアドレスを間違われますと、こちらからの返信が出来ません。</p>
-           <p><img src="img\contactpage-arrow.png" alt="">ご質問のご返答は３営業日以内にメールいたします。</p>
-           <p><img src="img\contactpage-arrow.png" alt="">お問い合わせいただいた個人情報について第3者に開示また提供することはありません。</p>
-           <p><img src="img\contactpage-arrow.png" alt="">お問い合わせいただいた内容は個人が特定できないようにして、よくある質問などに引用・転載する場合がございます。</p>
-           <p><img src="img\contactpage-arrow.png" alt="">携帯メールを入力される場合で迷惑メールや着信拒否の設定をされている場合はraamin0908@gmail.comからのメールを受信できるように設定してください。</p>
-         </div>
-         <div class="phone-here">
-           <p>お電話でのお問い合わせは<br class="b64">こちらから</p>
-           <div class="phone-here-inner">
-             <div class="phone-here-left">
-               <p>脱毛サロン うるる</p>
-               <a href="tel:0671810657"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
-             </div>
-             <div class="phone-here-right">
-               <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
-               <p>定休日/不定休</p>
-               <p>受付時間/午前11時～12時 13時～19時</p>
-             </div>
-           </div>
-         </div>
-       </div>
-     </section>
-     <section class="contact-form">
-       <h2>お問い合わせフォーム</h2>
-       <form class="" action="./otoiawase-confirm.php" method="post">
-         <p>お名前</p>
-         <input type="text" name="name">
-         <p>フリガナ</p>
-         <input type="text" name="kananame">
-         <p>電話番号</p>
-         <input type="text" name="tel">
-         <p>お悩みの部位1(もしあれば選択してください)</p>
-         <select class="" name="">
-           <option value="">---------- 選択してください ----------</option>
-           <option value="両脇">両脇</option>
-           <option value="手の甲・指">手の甲・指</option>
-           <option value="足の甲・指">足の甲・指</option>
-           <option value="鼻下">鼻下</option>
-         </select>
-         <p>お悩みの部位2(もしあれば選択してください)</p>
-         <select class="" name="">
-           <option value="">---------- 選択してください ----------</option>
-         </select>
-         <p>お問い合わせ内容</p>
-         <textarea name="content" rows="8" cols="80"></textarea>
-         <a href="#"><input class="button" type="submit" name="" value="確認"></a>
-       </form>
-     </section>
+     <section class="contact-confirm">
+       <h2>こちらの内容でお問い合わせしてよろしいでしょうか</h2>
+       <form action="./otoiawase-done.php" method="post">
+                <div>
+                    <label for="name">お名前</label>
+                    <label> <?= $name ?> </label>
+                    <input type="hidden" name="name" value=<?= $name ?> >
+                </div>
+                <div>
+                    <label for="kananame">フリガナ</label>
+                    <label> <?php echo $kananame ?> </label>
+                    <input type="hidden" name="kananame" value=<?= $kananame ?> >
+                </div>
+                <div>
+                    <label for="tel">電話番号</label>
+                    <label> <?php echo $tel ?> </label>
+                    <input type="hidden" name="tel" value=<?= $tel ?> >
+                </div>
+                <div>
+                    <label for="message">お悩みの部位1</label>
+                    <label> <?php echo $parts1 ?> </label>
+                    <input type="hidden" name="parts1" value=<?= $parts1 ?> >
+                </div>
+                <div>
+                    <label for="message">お悩みの部位2</label>
+                    <label> <?php echo $parts2 ?> </label>
+                    <input type="hidden" name ="parts2" value=<?= $parts2 ?> >
+                </div>
+                <div>
+                    <label for="message">お問い合わせ内容</label>
+                    <label> <?php echo $content ?> </label>
+                    <input type="hidden" name ="content" value=<?= $content ?> >
+                </div>
+                <input type="submit" value="戻る">
+                <input type="submit" value="完了">
+            </form>
+       <p></p>
+    </section>
    </div>
     <!-- ====================================================================
 

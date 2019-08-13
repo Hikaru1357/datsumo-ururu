@@ -1,9 +1,13 @@
+<?php
+var_dump($_REQUEST);
+?>
+
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <title>お問い合わせ確認｜難波でコスパの良い脱毛をお考えなら脱毛サロンうるる</title>
+    <title>お問い合わせが完了しました｜難波でコスパの良い脱毛をお考えなら脱毛サロンうるる</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
@@ -68,14 +72,23 @@
    <div class="main">
      <!-- ====================================================================
 
-           otoiawase-confirm
+           otoiawase-done
 
      =================================================================== -->
-     <section class="contact-confirm">
-       <h2>こちらの内容でお問い合わせしてよろしいでしょうか</h2>
-       <p></p>
-       <a href="#">戻る</a>
-       <a href="#">確認</a>
+     <section class="contact-done">
+       <h2>お問い合わせが完了しました</h2>
+       <p>
+お問い合わせいただきありがとうございました。
+お問い合わせを受け付けました。<br>
+
+折り返し、担当者よりご連絡いたしますので、
+恐れ入りますが、しばらくお待ちください。<br>
+
+なお、ご入力いただいたメールアドレス宛に受付完了メールを配信しております。
+完了メールが届かない場合、処理が正常に行われていない可能性があります。
+大変お手数ですが、再度お問い合わせの手続きをお願い致します。
+      </p>
+      <a href="#">トップページへ戻る</a>
     </section>
    </div>
     <!-- ====================================================================
