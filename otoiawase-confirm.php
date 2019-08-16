@@ -1,9 +1,6 @@
 <?php
-var_dump($_REQUEST);
-
-extract($_REQUEST);
-var_dump($name);
-
+session_start();
+extract($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -82,7 +79,7 @@ var_dump($name);
      =================================================================== -->
      <section class="contact-confirm">
        <h2>こちらの内容でお問い合わせしてよろしいでしょうか</h2>
-       <form action="./otoiawase-done.php" method="post">
+       <form action="./backend/mail.php" method="post">
                 <div>
                     <label for="name">お名前</label>
                     <label> <?= $name ?> </label>
@@ -90,33 +87,32 @@ var_dump($name);
                 </div>
                 <div>
                     <label for="kananame">フリガナ</label>
-                    <label> <?php echo $kananame ?> </label>
+                    <label> <?= $kananame ?> </label>
                     <input type="hidden" name="kananame" value=<?= $kananame ?> >
                 </div>
                 <div>
                     <label for="tel">電話番号</label>
-                    <label> <?php echo $tel ?> </label>
+                    <label> <?= $tel ?> </label>
                     <input type="hidden" name="tel" value=<?= $tel ?> >
                 </div>
                 <div>
                     <label for="message">お悩みの部位1</label>
-                    <label> <?php echo $parts1 ?> </label>
-                    <input type="hidden" name="parts1" value=<?= $parts1 ?> >
+                    <label> <?= $part1 ?> </label>
+                    <input type="hidden" name="parts1" value=<?= $part1 ?> >
                 </div>
                 <div>
                     <label for="message">お悩みの部位2</label>
-                    <label> <?php echo $parts2 ?> </label>
-                    <input type="hidden" name ="parts2" value=<?= $parts2 ?> >
+                    <label> <?= $part2 ?> </label>
+                    <input type="hidden" name ="parts2" value=<?= $part2 ?> >
                 </div>
                 <div>
                     <label for="message">お問い合わせ内容</label>
-                    <label> <?php echo $content ?> </label>
+                    <label> <?= $content ?> </label>
                     <input type="hidden" name ="content" value=<?= $content ?> >
                 </div>
-                <input type="submit" value="戻る">
+                <input type="button" onClick="location.href='./otoiawase.php'" value="戻る">
                 <input type="submit" value="完了">
             </form>
-       <p></p>
     </section>
    </div>
     <!-- ====================================================================

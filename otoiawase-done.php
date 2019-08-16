@@ -1,7 +1,3 @@
-<?php
-var_dump($_REQUEST);
-?>
-
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
