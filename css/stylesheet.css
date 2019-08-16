@@ -83,7 +83,8 @@
 
 .header-right-icons>a{
   display: inline-block;
-  width: 48.8%;
+  width: 40%;
+  margin-right: 2%;
 }
 
 .header-right-icons>a>img{
@@ -95,8 +96,9 @@
 }
 
 .call a{
+  text-align: left;
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   letter-spacing: 0.06em;
   color: #f05694;
@@ -116,13 +118,14 @@
 }
 
 .call p:not(:first-of-type){
+  text-align: left;
   font-size:0.75rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: #000000;
 }
 
-.header-inner nav ul{
+.header-inner nav:nth-of-type(2) ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,6 +183,45 @@
 
 }
 
+
+@media(max-width: 640px) {
+.menu-icon{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    height: auto;
+    text-align:center;
+    background-color: #eab1b1;
+    color: #ffffff;
+  }
+
+  .close{
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right:20px;
+  }
+
+  .icon-list{
+    margin: 25px 0;
+  }
+
+  .icon-list a{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 100px;
+  }
+
+  .icon-list a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+  }
+}
+
 /* ====================================================================
 
      contact
@@ -194,7 +236,7 @@
   align-items: center;
 }
 
-.google-map{/*422*/
+ .google-map{/*422*/
   width: 30.8%;
   margin-left: 9.8%;
   margin-top: 5.85%;
@@ -359,10 +401,17 @@ footer{
 }
 
 footer>nav>ul{
-  padding: 6.8% 20.66% 1.1% 18.3%;
+  width:90%;
+  margin: 0 auto;
+  padding: 6.8% 0 1.1% ;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+footer>nav>ul>li{
+  margin-bottom: 3%;
 }
 
 footer>nav>ul>li>a{
@@ -441,6 +490,39 @@ footer>p{
     color: #ffffff;
   }
 }
+
+/* ====================================================================
+
+     sitemap
+
+=================================================================== */
+.sitemap{
+  background-color: #eab1b1;
+}
+
+.sitemap>nav>ul{
+  width:90%;
+  margin: 0 auto;
+  padding: 6.8% 0 1.1% ;
+}
+
+.sitemap>nav>ul>li{
+  margin-bottom: 3%;
+}
+
+.sitemap>nav>ul>li>a{
+  font-size:1.06rem;
+  color: #ffffff;;
+  letter-spacing: 0.06em;
+}
+
+
+
+
+
+
+
+
 
 /* ====================================================================
 
@@ -973,10 +1055,18 @@ table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
   }
 
   .cost-performance table{
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
     margin: 5% 0 15%;
   }
 
   table.machine-comparison{
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
     width: 100%;
     margin: 5% 0 9%;
   }
@@ -1012,6 +1102,16 @@ table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
   flex-wrap: wrap;
 }
 
+.voices>a{
+  margin: 0 auto;
+  display: inline-block;
+  width: 30%;
+}
+
+.voices>a>img{
+  width: 100%;
+}
+
 .each-voice{/*525*/
   padding-bottom: 2%;
   margin-bottom: 2.7%;
@@ -1038,7 +1138,7 @@ table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 15px;
-  min-height: 170px;
+  /* min-height: 170px; */
   text-align: left;
   position: relative;
 }
@@ -1086,6 +1186,10 @@ table.machine-comparison tbody tr:nth-of-type(4) td:nth-of-type(4){
 
   .each-voice{
     width: 100%;
+  }
+
+  .voices>a{
+    width: 50%;
   }
 
 }
