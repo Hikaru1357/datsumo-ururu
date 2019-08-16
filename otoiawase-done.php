@@ -21,7 +21,7 @@
     <header>
       <div class="header-inner">
         <div class="catchcopy">
-          <p>脱毛サロン選びはこれで最後。難波でコスパの良い脱毛をお考えなら</p>
+          <p>脱毛サロン選びはこれで最後。難波で最もコスパの良い脱毛をお考えなら</p>
         </div>
         <div class="header-content">
           <div class="header-left">
@@ -42,15 +42,18 @@
           </div>
           <a href="tel:0671810657" class="b64 sp-header"><i class="fas fa-phone"></i></a>
           <a href="#" class="b64 sp-header"><i class="fas fa-envelope"></i></a>
-          <a href="#" class="b64 sp-header"><i class="fas fa-bars"></i></a>
-          <nav style="display:none">
-            <li><a href="#">トップページ</a></li>
-            <li><a href="#">当サロンについて</a></li>
-            <li><a href="#">脱毛の流れ</a></li>
-            <li><a href="#">脱毛メニュー・料金</a></li>
-            <li><a href="#">スタッフブログ</a></li>
-            <li><a href="#">よくあるご質問</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+          <a href="#" class="b64 sp-header open-menu"><i class="fas fa-bars"></i></a>
+          <nav class="menu-icon" style="display:none">
+            <p class="clearfix"><a href="#" class="close">×</a></p>
+            <ul class="">
+              <li class="icon-list"><a class="scroll-business" href="#business">トップページ</a></li>
+              <li class="icon-list"><a class="scroll-greeting" href="#greeting">当サロンについて</a></li>
+              <li class="icon-list"><a class="scroll-company" href="#company">脱毛の流れ</a></li>
+              <li class="icon-list"><a class="scroll-contact" href="#contact">脱毛メニュー・料金</a></li>
+              <li class="icon-list"><a class="scroll-contact" href="#contact">スタッフブログ</a></li>
+              <li class="icon-list"><a class="scroll-contact" href="#contact">よくあるご質問</a></li>
+              <li class="icon-list"><a class="scroll-contact" href="#contact">お問い合わせ</a></li>
+            </ul>
           </nav>
         </div>
         <nav class="nb64">
@@ -65,6 +68,7 @@
         </nav>
       </div>
 　   </header>
+   <div class="mask" style="display: none; position: fixed; top: 0; left:0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); z-index: 1000;"></div>
    <div class="main">
      <!-- ====================================================================
 
@@ -139,6 +143,7 @@
          <li><a href="#">脱毛メニュー・料金</a></li>
          <li><a href="#">スタッフブログ</a></li>
          <li><a href="#">お問い合わせ</a></li>
+         <li><a href="#">サイトマップ</a></li>
        </ul>
      </nav>
      <div class="sns">
