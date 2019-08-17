@@ -57,16 +57,24 @@
   align-items: center;
 }
 
-.header-left>img{
+.header-left a:first-of-type{
   width:40.9%;
 }
 
-.header-left>h1{
-  width: 50%;
-  margin-left:18px;
+.header-left a:first-of-type img{
+  width:100%;
 }
 
-.header-left>h1>img{
+.header-left a:nth-of-type(2){
+ width: 50%;
+ margin-left:18px;
+}
+
+.header-left a:nth-of-type(2) h1{
+  width: 100%;
+}
+
+.header-left a:nth-of-type(2) h1 img{
   width: 100%;
 }
 
@@ -162,11 +170,11 @@
     margin-bottom: 1.9%;
   }
 
-  .header-left>img{
+  .header-left a:first-of-type{
     width:20%;
   }
 
-  .header-left>h1{
+  .header-left a:nth-of-type(2){
     width: 30%;
     margin-left:10px;
   }
@@ -242,7 +250,7 @@
   margin-bottom: 5.27%;
 }
 
-.google-map {
+.google-map,#map{
   height:430px;
   width: 430px;
   border-radius: 50%;
@@ -349,21 +357,21 @@
 
 
 @media(max-width: 1100px) {
-  .google-map {
+  .google-map,#map {
     height:350px;
     width: 350px;
   }
 }
 
 @media(max-width: 950px) {
-  .google-map {
+  .google-map,#map  {
     height:270px;
     width: 270px;
   }
 }
 
 @media(max-width: 780px) {
-  .google-map {
+  .google-map,#map  {
     height:240px;
     width: 240px;
   }
@@ -380,7 +388,7 @@
    padding-top: 5.85%;
  }
 
- .google-map {
+ .google-map,#map  {
    margin: 0 auto;
    height:280px;
    width: 280px;
@@ -1629,9 +1637,10 @@ top: -28px;
   color: #000000;
 }
 
-#google-map2{
-  height:430px;
-  width: 430px;
+.access #map{
+  height:578px;
+  width: 100%;
+  border-radius: 0;
 }
 
 .access h3{
@@ -1650,6 +1659,12 @@ top: -28px;
   color: #000000;
 }
 
+@media(max-width: 768px){
+  .access #map{
+    height:350px;
+  }
+}
+
 @media(max-width: 640px){
 
   .access img{
@@ -1662,6 +1677,11 @@ top: -28px;
     letter-spacing: 0.06em;
     color: #000000;
   }
+
+  .access #map{
+    height:300px;
+  }
+
 
   .access h3{
     font-size:1.5rem;
@@ -2048,6 +2068,323 @@ top: -28px;
 
 
 
+
+
+
+
+/* ================================================================
+
+   menu
+   menu-plan
+
+=================================================================== */
+.menu-plan{/*918*/
+  width: 67.2%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-plan h2{
+  display:inline-block;
+  font-size: 2.18rem;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-top: 8%;
+  margin:0 auto 4%;
+  border-bottom: 2px solid #eab1b1;
+}
+
+.menu-plan p{
+  text-align: left;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #000000;
+  font-weight: 500;
+  padding-bottom:8%;
+}
+
+.datsumo{/*1158*/
+  width: 84.7%;
+  margin: 0 auto;
+}
+
+.zenshin{/*918*/
+  width: 79.2%;
+  margin: 0 auto;
+}
+
+.zenshin h3{
+  text-align: center;
+  font-size: 2.18rem;
+  line-height: 1.5;
+  padding: 2% 0;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background-color: #eab1b1;
+  border-radius: 20px;
+}
+
+.zenshin p{
+  font-size: 1.375rem;
+  line-height: 1.63;
+  font-weight: 600;
+  color: #000000;
+  margin: 5%;
+}
+
+.zenshin p span{
+  color: #ff0000;
+}
+
+.zentai{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vio-zentai{/*862*/
+  width:74.4%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vio-shosai{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bubun img{
+  margin-bottom: 4%;
+}
+
+.zentai img:first-of-type{/*899*/
+  width:77.6%;
+}
+
+.zentai img:nth-of-type(2){/*561*/
+  width:48.4%;
+  margin-right: 5%;
+}
+
+.zentai img:nth-of-type(3){/*540*/
+  width:46.6%;
+}
+
+.vio-zentai img:first-of-type{/*159*/
+ width:18.4%;
+}
+
+.vio-zentai img:nth-of-type(2){/*153*/
+ width:17.7%;
+}
+
+.vio-zentai img:nth-of-type(3){/*163*/
+  width:18.9%;
+}
+
+.vio-shosai img:first-of-type{/*309*/
+  width:26.6%;
+}
+
+.vio-shosai img:nth-of-type(2){/*443*/
+  width:38.2%;;
+}
+
+.vio-shosai img:nth-of-type(3){/*310*/
+  width:26.7%
+}
+
+.datsumo-kakaku h3,.course-kakaku h3{
+  font-size:1.75rem;
+  line-height: 2;
+  font-weight:700;
+  color: #000000;
+  padding-left: 1.5%;
+  border-left: 17px solid #F05694;
+}
+
+.datsumo-kakaku table,.course-kakaku table{
+  text-align: center;
+  margin: 2.74% 0 9.09%;
+  width: 100%;
+  border: 2px solid #a7a7a7;
+}
+
+.datsumo-kakaku table thead tr th,.course-kakaku table thead tr th{
+  background-color: #F05694;
+  color: #ffffff!important;
+}
+
+.datsumo-kakaku table tbody tr,.course-kakaku table tbody tr{
+  background-color:#fef6ee;;
+}
+
+.datsumo-kakaku table thead tr th,
+.datsumo-kakaku table tbody tr td,
+.course-kakaku table thead tr th,
+.course-kakaku table tbody tr td{
+  border: 2px solid #a7a7a7;
+}
+
+.datsumo-kakaku table thead tr th,
+.course-kakaku table thead tr th{
+  font-size:1.56rem;
+  line-height: 4;
+  font-weight:500;
+  color: #000000;
+}
+
+.datsumo-kakaku table thead tr th:first-of-type,
+.course-kakaku table thead tr th:first-of-type{
+  font-size:1.43rem;
+}
+
+.datsumo-kakaku table thead tr th:nth-of-type(2),
+.course-kakaku table thead tr th:nth-of-type(2){
+  font-size:1.43rem;
+}
+
+.datsumo-kakaku table thead tr th:nth-of-type(4),
+.course-kakaku table thead tr th:nth-of-type(4){
+  font-size:1.25rem;
+}
+
+.datsumo-kakaku table tbody tr:first-of-type td:first-of-type,
+.datsumo-kakaku table tbody tr:nth-of-type(2) td:first-of-type,
+.datsumo-kakaku table tbody tr:nth-of-type(3) td:first-of-type{
+  width: 16.4%;
+  font-size:1.43rem;
+  padding: 6% 0;
+  font-weight:600;
+  color: #000000;
+}
+
+.course-kakaku table tbody tr:first-of-type td:first-of-type,
+.course-kakaku table tbody tr:nth-of-type(2) td:first-of-type,
+.course-kakaku table tbody tr:nth-of-type(3) td:first-of-type,
+.course-kakaku table tbody tr:nth-of-type(4) td:first-of-type{
+  width: 16.4%;
+  font-size:1.25rem;
+  padding: 6% 0;
+  font-weight:600;
+  color: #000000;
+}
+
+.datsumo-kakaku table tbody tr:first-of-type td:nth-of-type(2),
+.datsumo-kakaku table tbody tr:nth-of-type(2) td:nth-of-type(2),
+.datsumo-kakaku table tbody tr:nth-of-type(3) td:nth-of-type(2),
+.course-kakaku table tbody tr:first-of-type td:nth-of-type(2),
+.course-kakaku table tbody tr:nth-of-type(2) td:nth-of-type(2),
+.course-kakaku table tbody tr:nth-of-type(3) td:nth-of-type(2),
+.course-kakaku table tbody tr:nth-of-type(4) td:nth-of-type(2){
+  width: 47.4%;
+  text-align: left;
+  padding: 0 3%;
+  font-size:0.93rem;
+  line-height: 2;
+  font-weight:500;
+  color: #000000;
+}
+
+
+
+.datsumo-kakaku table tbody tr:first-of-type td:nth-of-type(3),
+.datsumo-kakaku table tbody tr:nth-of-type(2) td:nth-of-type(3),
+.datsumo-kakaku table tbody tr:nth-of-type(3) td:nth-of-type(3),
+.course-kakaku table tbody tr:first-of-type td:nth-of-type(3),
+.course-kakaku table tbody tr:nth-of-type(2) td:nth-of-type(3),
+.course-kakaku table tbody tr:nth-of-type(3) td:nth-of-type(3),
+.course-kakaku table tbody tr:nth-of-type(4) td:nth-of-type(3){
+  width: 14.6%;
+  font-size:1.25rem;
+  line-height: 3;
+  font-weight:600;
+  color: #000000;
+}
+
+.datsumo-kakaku table tbody tr:first-of-type td:nth-of-type(4),
+.datsumo-kakaku table tbody tr:nth-of-type(2) td:nth-of-type(4),
+.datsumo-kakaku table tbody tr:nth-of-type(3) td:nth-of-type(4),
+.course-kakaku table tbody tr:first-of-type td:nth-of-type(4),
+.course-kakaku table tbody tr:nth-of-type(2) td:nth-of-type(4),
+.course-kakaku table tbody tr:nth-of-type(3) td:nth-of-type(4),
+.course-kakaku table tbody tr:nth-of-type(4) td:nth-of-type(4){
+  width: 21.4%;
+  font-size:1.56rem;
+  line-height: 2.4;
+  font-weight:600;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.must-read{
+  text-align: center;
+}
+
+.must-read p:first-of-type{
+  text-align: left;
+  font-size:1.125rem;
+  font-weight: 600;
+  line-height: 2;
+  color: #000000;
+  margin-bottom: 3%;
+}
+
+.must-read p:not(:first-of-type){
+  text-align: left;
+  font-size:1.25rem;
+  line-height: 1.8;
+  font-weight:600;
+  color: #000000;
+  margin-bottom: 1%;
+}
+
+.must-read a{
+  display: inline-block;
+  margin: 0 auto;
+  padding:3% 0 6%;
+  width: 35.9%;
+}
+
+.must-read a img{
+  width: 100%;
+}
+
+@media(max-width: 640px){
+
+  .menu-plan{
+    width: 80%;
+  }
+
+  .menu-plan h2{
+    font-size: 2rem;
+  }
+
+  .zenshin{
+    width: 90%;
+  }
+
+  .zenshin h3{
+    font-size: 2rem;
+    padding: 4% 0;
+  }
+
+  .must-read a{
+    width: 60%;
+  }
+
+  .datsumo-kakaku table,.course-kakaku table{
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 
 
 
