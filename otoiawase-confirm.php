@@ -1,6 +1,9 @@
 <?php
-session_start();
-extract($_SESSION);
+var_dump($_REQUEST);
+
+extract($_REQUEST);
+var_dump($name);
+
 ?>
 
 <!DOCTYPE html>
@@ -79,7 +82,7 @@ extract($_SESSION);
      =================================================================== -->
      <section class="contact-confirm">
        <h2>こちらの内容でお問い合わせしてよろしいでしょうか</h2>
-       <form action="./backend/mail.php" method="post">
+       <form action="./otoiawase-done.php" method="post">
                 <div>
                     <label for="name">お名前</label>
                     <label> <?= $name ?> </label>
@@ -87,32 +90,38 @@ extract($_SESSION);
                 </div>
                 <div>
                     <label for="kananame">フリガナ</label>
-                    <label> <?= $kananame ?> </label>
+                    <label> <?php echo $kananame ?> </label>
                     <input type="hidden" name="kananame" value=<?= $kananame ?> >
                 </div>
                 <div>
                     <label for="tel">電話番号</label>
-                    <label> <?= $tel ?> </label>
+                    <label> <?php echo $tel ?> </label>
                     <input type="hidden" name="tel" value=<?= $tel ?> >
                 </div>
                 <div>
+                    <label for="email">メールアドレス</label>
+                    <label> <?php echo $email ?> </label>
+                    <input type="hidden" name="email" value=<?= $email ?> >
+                </div>
+                <div>
                     <label for="message">お悩みの部位1</label>
-                    <label> <?= $part1 ?> </label>
-                    <input type="hidden" name="parts1" value=<?= $part1 ?> >
+                    <label> <?php echo $parts1 ?> </label>
+                    <input type="hidden" name="parts1" value=<?= $parts1 ?> >
                 </div>
                 <div>
                     <label for="message">お悩みの部位2</label>
-                    <label> <?= $part2 ?> </label>
-                    <input type="hidden" name ="parts2" value=<?= $part2 ?> >
+                    <label> <?php echo $parts2 ?> </label>
+                    <input type="hidden" name ="parts2" value=<?= $parts2 ?> >
                 </div>
                 <div>
                     <label for="message">お問い合わせ内容</label>
-                    <label> <?= $content ?> </label>
+                    <label> <?php echo $content ?> </label>
                     <input type="hidden" name ="content" value=<?= $content ?> >
                 </div>
-                <input type="button" onClick="location.href='./otoiawase.php'" value="戻る">
+                <input type="submit" value="戻る">
                 <input type="submit" value="完了">
             </form>
+       <p></p>
     </section>
    </div>
     <!-- ====================================================================
@@ -121,8 +130,9 @@ extract($_SESSION);
 
     =================================================================== -->
     <section class="contact2">
-      <div class="google-map">
-       <a href="#"><img src="img\contact-map photo.png" alt=""></a>
+      <div class="google-map-border">
+        <div class="google-map">
+        </div>
       </div>
       <div class="detail">
         <h2>脱毛サロン うるる</h2>
@@ -177,5 +187,6 @@ extract($_SESSION);
      </div>
      <p>COPYRIGHT (C) 脱毛サロンうるる ALL RIGHTS RESERVED.</p>
    </footer>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHTZOwVoBG7sIBs1WRNqPysU2e5UBruA&language=ja"></script>
   </body>
 </html>
