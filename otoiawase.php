@@ -1,3 +1,10 @@
+<?php
+session_start();
+extract($_SESSION);
+require 'backend/masterValue/destressedPart.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
@@ -72,48 +79,58 @@
 
         =================================================================== -->
         <section class="main-visual">
-            <form action="./otoiawase-confirm.php" method="post">
+          <h2><?php if(!empty($_SESSION['error'])){
+            foreach($_SESSION['error'] as $keynum => $value) {
+              echo $value; }
+            }
+         ?> </h2>
+                <form class="" action="./backend/registerValidate.php" method="post">
                 <div>
                     <label for="name">お名前</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" value=<?= $name ?>>
                 </div>
                 <div>
                     <label for="kananame">フリガナ</label>
-                    <input type="text" id="kananame" name="kananame">
+                    <input type="text" id="kananame" name="kananame" value=<?= $kananame ?>>
                 </div>
                 <div>
                     <label for="tel">電話番号</label>
-                    <input type="text" id="tel" name="tel">
+                    <input type="text" id="tel" name="tel" value=<?= $tel ?>>
                 </div>
                 <div>
                     <label for="email">メールアドレス</label>
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" value=<?= $email ?>>
                 </div>
                 <div>
                     <label for="message">お悩みの部位1</label>
                     <select id = parts1 name="parts1">
                             <!-- 両脇、手の甲・指、足の甲・指、鼻下 -->
                         <option value="">選択してください</option>
-                        <option value="両脇">両脇</option>
-                        <option value="手の甲・指">手の甲・指</option>
-                        <option value="足の甲・指">足の甲・指</option>
-                        <option value="鼻下">鼻下</option>
+                        <?php foreach ($destressed_parts as $key => $val) : ?>
+                        <?php if($val == $parts1 ) { ?>
+                          <option value="<?php echo $val; ?>" selected> <?php echo $val; ?></option>
+                        <?php } else {?>
+                        <option value="<?php echo $val; ?>"> <?php echo $val; ?></option>
+                        <?php } ?>  
+                        <?php endforeach; ?>
                     </select>
                 </div>
                 <div>
                     <label for="message">お悩みの部位2</label>
                     <select id = parts2 name="parts2">
-                            <!-- 両脇、手の甲・指、足の甲・指、鼻下 -->
                         <option value="">選択してください</option>
-                        <option value="両脇">両脇</option>
-                        <option value="手の甲・指">手の甲・指</option>
-                        <option value="足の甲・指">足の甲・指</option>
-                        <option value="鼻下">鼻下</option>
+                        <?php foreach ($destressed_parts as $key => $val) : ?>
+                        <?php if($val == $parts2 ) { ?>
+                          <option value="<?php echo $val; ?>" selected> <?php echo $val; ?></option>
+                        <?php } else {?>
+                        <option value="<?php echo $val; ?>"> <?php echo $val; ?></option>
+                        <?php } ?>  
+                        <?php endforeach; ?>
                     </select>
                 </div>
                 <div>
                     <label for="message">お問い合わせ内容</label>
-                    <textarea id="content" name="content"> </textarea>
+                    <textarea id="content" name="content" value=<?= $content ?>> <?= $content ?></textarea>
                 </div>
                 <input type="submit" value="確認">
             </form>

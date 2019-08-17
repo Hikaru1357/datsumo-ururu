@@ -4,16 +4,14 @@ session_start();
 // // サニタイズ
 $clean = sanitizeRequest($_REQUEST);
 changeSession($clean);
-
 $validate = new requestValidation();
 $validate->checkRequired($clean, $form);
 
 if($validate->error) {
-    var_dump($_SESSION['error']);
+    $_SESSION['error'] = $validate->error;
     header("Location: /datsumo-ururu/otoiawase.php");
 }
 else {
-    $_SESSION['error'] = $validate->error;
     header("Location: /datsumo-ururu/otoiawase-confirm.php");
 }
 
