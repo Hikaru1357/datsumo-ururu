@@ -1,5 +1,4 @@
 <?php
-var_dump($_REQUEST);
 ?>
 
 <!DOCTYPE html>
@@ -29,13 +28,13 @@ var_dump($_REQUEST);
         </div>
         <div class="header-content">
           <div class="header-left">
-            <img src="img\header-logo.png" alt="脱毛サロンうるるのロゴ">
-            <h1><img src="img\header-ururu.png" alt="脱毛サロンうるる"></h1>
+            <a href="index.html"><img src="img\header-logo.png" alt="脱毛サロンうるるのロゴ"></a>
+            <a href="index.html"><h1><img src="img\header-ururu.png" alt="脱毛サロンうるる"></h1></a>
           </div>
           <div class="nb64 header-right">
             <div class="header-right-icons">
-              <a href="#"><img src="img\header-circle1.png" alt="よくあるご質問"></a>
-              <a href="#"><img src="img\header-circle2.png" alt="アクセスはこちら"></a>
+              <a href="q&a.html"><img src="img\header-circle1.png" alt="よくあるご質問"></a>
+              <a href="salon.html#access"><img src="img\header-circle2.png" alt="アクセスはこちら"></a>
             </div>
             <div class="call">
               <p>お電話でのお問い合わせ</p>
@@ -45,29 +44,29 @@ var_dump($_REQUEST);
             </div>
           </div>
           <a href="tel:0671810657" class="b64 sp-header"><i class="fas fa-phone"></i></a>
-          <a href="#" class="b64 sp-header"><i class="fas fa-envelope"></i></a>
+          <a href="otoiawase.php" class="b64 sp-header"><i class="fas fa-envelope"></i></a>
           <a href="#" class="b64 sp-header open-menu"><i class="fas fa-bars"></i></a>
           <nav class="menu-icon" style="display:none">
             <p class="clearfix"><a href="#" class="close">×</a></p>
             <ul class="">
-              <li class="icon-list"><a class="scroll-business" href="#business">トップページ</a></li>
-              <li class="icon-list"><a class="scroll-greeting" href="#greeting">当サロンについて</a></li>
-              <li class="icon-list"><a class="scroll-company" href="#company">脱毛の流れ</a></li>
-              <li class="icon-list"><a class="scroll-contact" href="#contact">脱毛メニュー・料金</a></li>
-              <li class="icon-list"><a class="scroll-contact" href="#contact">スタッフブログ</a></li>
-              <li class="icon-list"><a class="scroll-contact" href="#contact">よくあるご質問</a></li>
-              <li class="icon-list"><a class="scroll-contact" href="#contact">お問い合わせ</a></li>
+              <li class="icon-list"><a  href="index.html">トップページ</a></li>
+              <li class="icon-list"><a  href="salon.html">当サロンについて</a></li>
+              <li class="icon-list"><a  href="flow.html">脱毛の流れ</a></li>
+              <li class="icon-list"><a  href="menu.html">脱毛メニュー・料金</a></li>
+              <li class="icon-list"><a  href="blogs.html">スタッフブログ</a></li>
+              <li class="icon-list"><a  href="q&a.html">よくあるご質問</a></li>
+              <li class="icon-list"><a  href="otoiawase.php">お問い合わせ</a></li>
             </ul>
           </nav>
         </div>
         <nav class="nb64">
           <ul>
-            <li><a href="#">トップページ</a></li>
-            <li><a href="#">当サロンについて</a></li>
-            <li><a href="#">脱毛の流れ</a></li>
-            <li><a href="#">脱毛メニュー・料金</a></li>
-            <li><a href="#">スタッフブログ</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="salon.html">当サロンについて</a></li>
+            <li><a href="flow.html">脱毛の流れ</a></li>
+            <li><a href="menu.html">脱毛メニュー・料金</a></li>
+            <li><a href="blogs.html">スタッフブログ</a></li>
+            <li><a href="otoiawase.php">お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
@@ -92,7 +91,7 @@ var_dump($_REQUEST);
 完了メールが届かない場合、処理が正常に行われていない可能性があります。
 大変お手数ですが、再度お問い合わせの手続きをお願い致します。
       </p>
-      <a href="#">トップページへ戻る</a>
+      <a href="index.html">トップページへ戻る</a>
     </section>
    </div>
     <!-- ====================================================================
@@ -127,7 +126,7 @@ var_dump($_REQUEST);
           </tbody>
         </table>
         <div class="clearfix">
-          <a href="#" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
+          <a href="salon.html#access" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
         </div>
       </div>
       <div class="clearfix">
@@ -139,26 +138,30 @@ var_dump($_REQUEST);
            footer
 
      =================================================================== -->
-   <footer>
-     <nav>
-       <ul>
-         <li><a href="#">トップページ</a></li>
-         <li><a href="#">当サロンについて</a></li>
-         <li><a href="#">脱毛の流れ</a></li>
-         <li><a href="#">脱毛メニュー・料金</a></li>
-         <li><a href="#">スタッフブログ</a></li>
-         <li><a href="#">お問い合わせ</a></li>
-         <li><a href="#">サイトマップ</a></li>
-       </ul>
-     </nav>
-     <div class="sns">
-       <a href="#"><img src="img\footer-line.png" alt="Line@"></a>
-       <a href="#"><img src="img\footer-insta.png" alt="instagram"></a>
-       <a href="#"><img src="img\footer-twitter.png" alt="Twitter"></a>
-       <a href="#"><img src="img\footer-facebook.png" alt="Facebook"></a>
-     </div>
-     <p>COPYRIGHT (C) 脱毛サロンうるる ALL RIGHTS RESERVED.</p>
-   </footer>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHTZOwVoBG7sIBs1WRNqPysU2e5UBruA&language=ja"></script>
-  </body>
-</html>
+     <footer>
+       <nav>
+         <ul>
+           <li><a href="index.html">トップページ</a></li>
+           <li><a href="salon.html">当サロンについて</a></li>
+           <li><a href="flow.html">脱毛の流れ</a></li>
+           <li><a href="menu.html">脱毛メニュー・料金</a></li>
+           <li><a href="blogs.html">スタッフブログ</a></li>
+           <li><a href="otoiawase.php">お問い合わせ</a></li>
+           <li><a href="sitemap.html">サイトマップ</a></li>
+         </ul>
+       </nav>
+       <div class="sns">
+         <a href="https://line.me/R/ti/p/%40tmd4509a"><img src="img\footer-line.png" alt="Line@"></a>
+
+         <a href="https://instagram.com/kojikoji1997?igshid=1b11h3o0hhd52"><img src="img\footer-insta.png" alt="instagram"></a>
+
+         <a href="https://twitter.com/ururu_datsumo?ref_src=twsrc%5Etfw" data-show-count="false"><img src="img\footer-twitter.png" alt="Twitter"></a>
+         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+         <a href="https://www.facebook.com/%E8%84%B1%E6%AF%9B%E3%82%B5%E3%83%AD%E3%83%B3-%E3%81%86%E3%82%8B%E3%82%8B-101603207864842/"><img src="img\footer-facebook.png" alt="Facebook"></a>
+       </div>
+       <p>COPYRIGHT (C) 脱毛サロンうるる ALL RIGHTS RESERVED.</p>
+     </footer>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHTZOwVoBG7sIBs1WRNqPysU2e5UBruA&language=ja"></script>
+    </body>
+  </html>

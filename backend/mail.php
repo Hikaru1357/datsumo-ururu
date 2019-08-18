@@ -17,9 +17,9 @@ if(empty($body2)) {
 }
 $body .= $body2;
 
-$from = "takubon3140@gmail.com";
-$smtp_user = "takubon3140@gmail.com";
-$smtp_password = "U835113b";
+$from = "raamin0908@gmail.com";
+$smtp_user = "raamin0908@gmail.com";
+$smtp_password = "1997WbMewzjb98";
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -37,8 +37,8 @@ try {
     $mail->CharSet = "utf-8";
 
     //Recipients
-    $mail->setFrom('takubon3140@gmail.com');
-    $mail->addAddress('takubon3140@gmail.com');     // Add a recipient
+    $mail->setFrom('raamin0908@gmail.com');
+    $mail->addAddress('raamin0908@gmail.com');     // Add a recipient
     // $mail->addAddress('ellen@example.com');               // Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
@@ -57,7 +57,7 @@ try {
     $mail->send();
     echo 'Message has been sent';
     $_SESSION = [];
-    header("Location:../otoiawase-done.html");
+    header("Location:../otoiawase-done.php");
 
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
