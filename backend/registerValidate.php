@@ -9,10 +9,11 @@ $validate->checkRequired($clean, $form);
 
 if($validate->error) {
     $_SESSION['error'] = $validate->error;
-    header("Location: /datsumo-ururu/otoiawase.php");
+    header("Location: ./../otoiawase.php");
 }
 else {
-    header("Location: /datsumo-ururu/otoiawase-confirm.php");
+    $_SESSION['error'] = "";
+    header("Location: ./../otoiawase-confirm.php");
 }
 
 //----------------------------------------------------------------

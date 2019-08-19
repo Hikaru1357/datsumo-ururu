@@ -12,7 +12,7 @@ $body = "ホームページからお問い合わせがありました。";
 
 $body2 = makeBody($form);
 if(empty($body2)) {
-    header("Location: /datsumo-ururu/otoiawase.php");
+    header("Location: ./../otoiawase.php");
     exit;
 }
 $body .= $body2;
@@ -57,7 +57,7 @@ try {
     $mail->send();
     echo 'Message has been sent';
     $_SESSION = [];
-    header("Location:../otoiawase-done.php");
+    header("Location:./../otoiawase-done.php");
 
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
