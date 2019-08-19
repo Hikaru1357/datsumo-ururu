@@ -22,6 +22,15 @@ extract($_SESSION);
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
     <script src="js/animation.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137177856-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-137177856-4');
+    </script>
   </head>
   <body>
     <header>
