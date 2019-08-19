@@ -17,15 +17,17 @@ if(empty($body2)) {
 }
 $body .= $body2;
 
-$from = "raamin0908@gmail.com";
-$smtp_user = "raamin0908@gmail.com";
-$smtp_password = "1997WbMewzjb98";
+$from = "takubon3140@gmail.com";
+$smtp_user = "takubon3140@gmail.com";
+$smtp_password = "U835113b";
+// raamin0908@gmail.com
+// 1997WbMewzjb98
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 try {
     //Server settings
-    $mail->SMTPDebug = 2;                                       // Enable verbose debug output
+    $mail->SMTPDebug = 0;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
@@ -37,8 +39,8 @@ try {
     $mail->CharSet = "utf-8";
 
     //Recipients
-    $mail->setFrom('raamin0908@gmail.com');
-    $mail->addAddress('raamin0908@gmail.com');     // Add a recipient
+    $mail->setFrom($smtp_user);
+    $mail->addAddress($smtp_user);     // Add a recipient
     // $mail->addAddress('ellen@example.com');               // Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
@@ -60,7 +62,7 @@ try {
     header("Location:./../otoiawase-done.php");
 
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    header("Location:./../otoiawase.php");
 }
 
 
