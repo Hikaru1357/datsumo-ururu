@@ -6,7 +6,6 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 require 'form.php';
 session_start();
-// exit;
 $subject = "カスタマーメール";
 $body = "ホームページからお問い合わせがありました。";
 
@@ -16,10 +15,12 @@ if(empty($body2)) {
     exit;
 }
 $body .= $body2;
-
+//アカウントを変更したいときはここをいじる
 $from = "takubon3140@gmail.com";
 $smtp_user = "takubon3140@gmail.com";
 $smtp_password = "U835113b";
+//------------------------------------
+
 // raamin0908@gmail.com
 // 1997WbMewzjb98
 
@@ -69,7 +70,7 @@ try {
 function makeBody($form) {
     foreach($_REQUEST as $key => $value) {
         if(!empty($value)) {
-            $body .= $form[$key]['namejp'] . ":" . $value;
+            $body .= $form[$key]['namejp'] . " : " . $value . "\r\n";
         }
     }
     return $body;
