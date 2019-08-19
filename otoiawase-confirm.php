@@ -94,37 +94,37 @@ extract($_SESSION);
        <h2>こちらの内容でお問い合わせしてよろしいでしょうか</h2>
        <form action="./backend/mail.php" method="post">
                 <div>
-                    <label for="name">お名前</label>
+                    <label for="name">お名前 : </label>
                     <label> <?= $name ?> </label>
                     <input type="hidden" name="name" value=<?= $name ?> >
                 </div>
                 <div>
-                    <label for="kananame">フリガナ</label>
+                    <label for="kananame">フリガナ : </label>
                     <label> <?= $kananame ?> </label>
                     <input type="hidden" name="kananame" value=<?= $kananame ?> >
                 </div>
                 <div>
-                    <label for="tel">電話番号</label>
+                    <label for="tel">電話番号 : </label>
                     <label> <?= $tel ?> </label>
                     <input type="hidden" name="tel" value=<?= $tel ?> >
                 </div>
                 <div>
-                    <label for="email">メールアドレス</label>
+                    <label for="email">メールアドレス : </label>
                     <label> <?= $email ?> </label>
                     <input type="hidden" name="email" value=<?= $email ?> >
                 </div>
                 <div>
-                    <label for="message">お悩みの部位1</label>
+                    <label for="message">お悩みの部位1 : </label>
                     <label> <?= $parts1 ?> </label>
                     <input type="hidden" name="parts1" value=<?= $parts1 ?> >
                 </div>
                 <div>
-                    <label for="message">お悩みの部位2</label>
+                    <label for="message">お悩みの部位2 : </label>
                     <label> <?= $parts2 ?> </label>
                     <input type="hidden" name ="parts2" value=<?= $parts2 ?> >
                 </div>
                 <div>
-                    <label for="message">お問い合わせ内容</label>
+                    <label for="message">お問い合わせ内容 : </label>
                     <label> <?= $content ?> </label>
                     <input type="hidden" name ="content" value=<?= $content ?> >
                 </div>
