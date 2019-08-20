@@ -68,7 +68,7 @@ require 'backend/masterValue/destressedPart.php';
               <li class="icon-list"><a  href="menu.html">脱毛メニュー・料金</a></li>
               <li class="icon-list"><a  href="blogs.html">スタッフブログ</a></li>
               <li class="icon-list"><a  href="q&a.html">よくあるご質問</a></li>
-              <li class="icon-list"><a  href="otoiawase.php">お問い合わせ</a></li>
+              <li class="icon-list"><a  href="otoiawase.php">ご予約、お問い合わせ</a></li>
             </ul>
           </nav>
         </div>
@@ -79,7 +79,7 @@ require 'backend/masterValue/destressedPart.php';
             <li><a href="flow.html">脱毛の流れ</a></li>
             <li><a href="menu.html">脱毛メニュー・料金</a></li>
             <li><a href="blogs.html">スタッフブログ</a></li>
-            <li><a href="otoiawase.php">お問い合わせ</a></li>
+            <li><a href="otoiawase.php">ご予約、お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
@@ -103,7 +103,7 @@ require 'backend/masterValue/destressedPart.php';
      <section class="contact-page">
        <div class="contact-inner">
          <img src="img\contactpage-contact.png" alt="contact">
-         <h2>お問い合わせ</h2>
+         <h2>ご予約、お問い合わせ</h2>
          <p>ご連絡を頂きますと、通常3営業日以内に返信いたします。
            もしも返信がない場合、うまく送信できない場合は、お電話にてご連絡ください。
          </p>
@@ -112,13 +112,13 @@ require 'backend/masterValue/destressedPart.php';
            <p><img src="img\contactpage-arrow.png" alt="">ご質問のご返答は３営業日以内にメールいたします。</p>
            <p><img src="img\contactpage-arrow.png" alt="">お問い合わせいただいた個人情報について第3者に開示また提供することはありません。</p>
            <p><img src="img\contactpage-arrow.png" alt="">お問い合わせいただいた内容は個人が特定できないようにして、よくある質問などに引用・転載する場合がございます。</p>
-           <p><img src="img\contactpage-arrow.png" alt="">携帯メールを入力される場合で迷惑メールや着信拒否の設定をされている場合はraamin0908@gmail.comからのメールを受信できるように設定してください。</p>
+           <p><img src="img\contactpage-arrow.png" alt="">携帯メールを入力される場合で迷惑メールや着信拒否の設定をされている場合はdatsumousalon.ururu358@gmail.comからのメールを受信できるように設定してください。</p>
          </div>
          <div class="phone-here">
-           <p>お電話でのご予約やお問い合わせは<br class="b64">こちらから</p>
+           <p>ご予約や無料ご相談は<br class="b48">こちらのお電話から</p>
            <div class="phone-here-inner">
              <div class="phone-here-left">
-               <p>脱毛サロン うるる</p>
+               <p>↓ 脱毛サロン うるる ↓</p>
                <a href="tel:0671810657"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
              </div>
              <div class="phone-here-right">
@@ -131,7 +131,7 @@ require 'backend/masterValue/destressedPart.php';
        </div>
      </section>
      <section class="contact-form">
-       <h2>お問い合わせフォーム</h2>
+       <h2>メールでのお問い合わせは<b class="b48">こちらから</h2>
           <h2 style="color:red;"><?php if(!empty($_SESSION['error'])){
             foreach($_SESSION['error'] as $keynum => $value) {
               echo $value; }
@@ -201,6 +201,7 @@ require 'backend/masterValue/destressedPart.php';
           </div>
           <div class="detail">
             <h2>脱毛サロン うるる</h2>
+            <p>ご予約や無料ご相談はこちらのお電話から</p>
             <a href="tel:0671810657"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
             <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
             <p>定休日/不定休</p>
@@ -241,7 +242,7 @@ require 'backend/masterValue/destressedPart.php';
                <li><a href="flow.html">脱毛の流れ</a></li>
                <li><a href="menu.html">脱毛メニュー・料金</a></li>
                <li><a href="blogs.html">スタッフブログ</a></li>
-               <li><a href="otoiawase.php">お問い合わせ</a></li>
+               <li><a href="otoiawase.php">ご予約、お問い合わせ</a></li>
                <li><a href="sitemap.html">サイトマップ</a></li>
              </ul>
            </nav>

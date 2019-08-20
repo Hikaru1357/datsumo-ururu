@@ -67,7 +67,7 @@ extract($_SESSION);
               <li class="icon-list"><a  href="menu.html">脱毛メニュー・料金</a></li>
               <li class="icon-list"><a  href="blogs.html">スタッフブログ</a></li>
               <li class="icon-list"><a  href="q&a.html">よくあるご質問</a></li>
-              <li class="icon-list"><a  href="otoiawase.php">お問い合わせ</a></li>
+              <li class="icon-list"><a  href="otoiawase.php">ご予約、お問い合わせ</a></li>
             </ul>
           </nav>
         </div>
@@ -78,7 +78,7 @@ extract($_SESSION);
             <li><a href="flow.html">脱毛の流れ</a></li>
             <li><a href="menu.html">脱毛メニュー・料金</a></li>
             <li><a href="blogs.html">スタッフブログ</a></li>
-            <li><a href="otoiawase.php">お問い合わせ</a></li>
+            <li><a href="otoiawase.php">ご予約、お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
@@ -145,6 +145,7 @@ extract($_SESSION);
       </div>
       <div class="detail">
         <h2>脱毛サロン うるる</h2>
+        <p>ご予約や無料ご相談はこちらのお電話から</p>
         <a href="tel:0671810657"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
         <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
         <p>定休日/不定休</p>
@@ -185,7 +186,7 @@ extract($_SESSION);
            <li><a href="flow.html">脱毛の流れ</a></li>
            <li><a href="menu.html">脱毛メニュー・料金</a></li>
            <li><a href="blogs.html">スタッフブログ</a></li>
-           <li><a href="otoiawase.php">お問い合わせ</a></li>
+           <li><a href="otoiawase.php">ご予約、お問い合わせ</a></li>
            <li><a href="sitemap.html">サイトマップ</a></li>
          </ul>
        </nav>
