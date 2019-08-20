@@ -50,7 +50,7 @@ require 'backend/masterValue/destressedPart.php';
               <a href="salon.html#access"><img src="img\header-circle2.png" alt="アクセスはこちら"></a>
             </div>
             <div class="call">
-              <p>お電話でのお問い合わせ</p>
+              <p>お電話でのご予約やお問い合わせ</p>
               <a href="tel:0671810657"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
               <p>定休日/不定休</p>
               <p>受付時間/午前11時～12時 13時～19時</p>
@@ -115,7 +115,7 @@ require 'backend/masterValue/destressedPart.php';
            <p><img src="img\contactpage-arrow.png" alt="">携帯メールを入力される場合で迷惑メールや着信拒否の設定をされている場合はraamin0908@gmail.comからのメールを受信できるように設定してください。</p>
          </div>
          <div class="phone-here">
-           <p>お電話でのお問い合わせは<br class="b64">こちらから</p>
+           <p>お電話でのご予約やお問い合わせは<br class="b64">こちらから</p>
            <div class="phone-here-inner">
              <div class="phone-here-left">
                <p>脱毛サロン うるる</p>

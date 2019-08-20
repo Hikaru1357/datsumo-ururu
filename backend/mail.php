@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 require 'form.php';
 session_start();
-$subject = "カスタマーメール";
+$subject = "カスタマーメール11111";
 $body = "ホームページからお問い合わせがありました。";
 
 $body2 = makeBody($form);
@@ -16,9 +16,12 @@ if(empty($body2)) {
 }
 $body .= $body2;
 //アカウントを変更したいときはここをいじる
-$from = "takubon3140@gmail.com";
-$smtp_user = "takubon3140@gmail.com";
-$smtp_password = "U835113b";
+$from = "datsumousalon.ururu358@gmail.com";
+$smtp_user = "datsumousalon.ururu358@gmail.com";
+$smtp_password = "Ururu0315";
+
+// datsumousalon.ururu358@gmail.com
+// Ururu0315
 //------------------------------------
 
 // raamin0908@gmail.com
