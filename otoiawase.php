@@ -51,12 +51,12 @@ require 'backend/masterValue/destressedPart.php';
             </div>
             <div class="call">
               <p>お電話でのご予約やお問い合わせ</p>
-              <a href="tel:0671810657"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
+              <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
               <p>定休日/不定休</p>
               <p>受付時間/午前11時～12時 13時～19時</p>
             </div>
           </div>
-          <a href="tel:0671810657" class="b64 sp-header"><i class="fas fa-phone"></i></a>
+          <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});" class="b64 sp-header"><i class="fas fa-phone"></i></a>
           <a href="otoiawase.php" class="b64 sp-header"><i class="fas fa-envelope"></i></a>
           <a href="#" class="b64 sp-header open-menu"><i class="fas fa-bars"></i></a>
           <nav class="menu-icon" style="display:none">
@@ -66,7 +66,7 @@ require 'backend/masterValue/destressedPart.php';
               <li class="icon-list"><a  href="salon.html">当サロンについて</a></li>
               <li class="icon-list"><a  href="flow.html">脱毛の流れ</a></li>
               <li class="icon-list"><a  href="menu.html">脱毛メニュー・料金</a></li>
-              <li class="icon-list"><a  href="blogs.html">スタッフブログ</a></li>
+              <li class="icon-list"><a  href="blogs">スタッフブログ</a></li>
               <li class="icon-list"><a  href="q&a.html">よくあるご質問</a></li>
               <li class="icon-list"><a  href="otoiawase.php">ご予約、お問い合わせ</a></li>
             </ul>
@@ -78,7 +78,7 @@ require 'backend/masterValue/destressedPart.php';
             <li><a href="salon.html">当サロンについて</a></li>
             <li><a href="flow.html">脱毛の流れ</a></li>
             <li><a href="menu.html">脱毛メニュー・料金</a></li>
-            <li><a href="blogs.html">スタッフブログ</a></li>
+            <li><a href="blogs">スタッフブログ</a></li>
             <li><a href="otoiawase.php">ご予約、お問い合わせ</a></li>
           </ul>
         </nav>
@@ -119,7 +119,7 @@ require 'backend/masterValue/destressedPart.php';
            <div class="phone-here-inner">
              <div class="phone-here-left">
                <p>↓ 脱毛サロン うるる ↓</p>
-               <a href="tel:0671810657"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
+               <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
              </div>
              <div class="phone-here-right">
                <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
@@ -131,7 +131,7 @@ require 'backend/masterValue/destressedPart.php';
        </div>
      </section>
      <section class="contact-form">
-       <h2>メールでのお問い合わせは<b class="b48">こちらから</h2>
+       <h2>メールでのお問い合わせは<br class="b48">こちらから</h2>
           <h2 style="color:red;"><?php if(!empty($_SESSION['error'])){
             foreach($_SESSION['error'] as $keynum => $value) {
               echo $value; }
@@ -202,7 +202,7 @@ require 'backend/masterValue/destressedPart.php';
           <div class="detail">
             <h2>脱毛サロン うるる</h2>
             <p>ご予約や無料ご相談はこちらのお電話から</p>
-            <a href="tel:0671810657"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
+            <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
             <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
             <p>定休日/不定休</p>
             <p>受付時間/午前11時～12時 13時～19時</p>
@@ -241,7 +241,7 @@ require 'backend/masterValue/destressedPart.php';
                <li><a href="salon.html">当サロンについて</a></li>
                <li><a href="flow.html">脱毛の流れ</a></li>
                <li><a href="menu.html">脱毛メニュー・料金</a></li>
-               <li><a href="blogs.html">スタッフブログ</a></li>
+               <li><a href="blogs">スタッフブログ</a></li>
                <li><a href="otoiawase.php">ご予約、お問い合わせ</a></li>
                <li><a href="sitemap.html">サイトマップ</a></li>
              </ul>
