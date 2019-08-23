@@ -10,8 +10,8 @@ require 'backend/masterValue/destressedPart.php';
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <title>当サロンについて｜難波でコスパの良い脱毛をお考えなら脱毛サロンうるる</title>
-    <meta name="description" content="">
+    <title>ご予約、お問い合わせ｜難波で最もコスパの良い脱毛をお考えなら脱毛サロンうるる</title>
+    <meta name="description" content="ご予約、お問い合わせを承っております。ご予約の際は、お電話でお願いいたします。">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/default.css">
@@ -93,7 +93,7 @@ require 'backend/masterValue/destressedPart.php';
      =================================================================== -->
      <section class="main-under">
        <img src="img/salon-mainvisual.jpg" alt="うるるの内装">
-       <h1>お問い合わせ</h1>
+       <h1>ご予約、お問い合わせ</h1>
      </section>
      <!-- ====================================================================
 

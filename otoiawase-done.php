@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <title>お問い合わせが完了しました｜難波でコスパの良い脱毛をお考えなら脱毛サロンうるる</title>
+    <title>お問い合わせが完了しました｜難波で最もコスパの良い脱毛をお考えなら脱毛サロンうるる</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
