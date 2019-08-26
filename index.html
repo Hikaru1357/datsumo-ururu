@@ -20,11 +20,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137177856-4"></script>
     <script>
-      $(function(){
-        $("#header").load("./common/header.html");
-        $("#footer").load("./common/footer.html");
-
-      });
+    $(function(){
+      $("#header").load("./common/header.html");
+      $("#contact2").load("./common/contact2.html");
+      $("#footer").load("./common/footer.html");
+    });
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -33,7 +33,7 @@
     </script>
   </head>
   <body>
-    <div id="header"></div>
+   <div id="header"></div>
    <div class="mask" style="display: none; position: fixed; top: 0; left:0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); z-index: 1000;"></div>
    <div class="main">
      <!-- ====================================================================
@@ -82,7 +82,7 @@
            </tbody>
          </table>
          <div class="clearfix">
-           <a href="salon.html#access" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
+           <a href="salon#access" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
          </div>
        </div>
      </section>
@@ -97,7 +97,7 @@
            <img src="img\icon-about.png" alt="当サロンについて">
            <p>About</p>
            <h2>当サロンについて</h2>
-           <a href="salon.html"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
+           <a href="salon"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
          </div>
        </div>
        <div class="icon">
@@ -105,7 +105,7 @@
            <img src="img\icon-flow.png" alt="施術の流れ">
            <p>Flow</p>
            <h2>施術の流れ</h2>
-           <a href="flow.html"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
+           <a href="flow"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
          </div>
        </div>
        <div class="icon">
@@ -113,7 +113,7 @@
            <img src="img\icon-price.png" alt="料金・メニュー">
            <p>Price</p>
            <h2>料金・メニュー</h2>
-           <a href="menu.html"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
+           <a href="menu"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
          </div>
        </div>
      </section>
@@ -303,7 +303,7 @@
              </a>
            </div>
          </div>
-         <a href="salon.html#voice"><img src="img\top-to-voice.png" alt="うるるの口コミをもっと見る"></a>
+         <a href="salon#voice"><img src="img\top-to-voice.png" alt="うるるの口コミをもっと見る"></a>
         </div>
        </div>
 
@@ -396,7 +396,7 @@
                <p>万が一、効果に満足いただけない場合は、残りの回数分をご返金いたします。また急なお引越しなどでサロンに通えなくなってしまった場合でもご相談下さい。</p>
              </div>
            </div>
-           <a href="menu.html"><img src="img\promise-price.png" alt="脱毛プラン＆料金を見る"></a>
+           <a href="menu"><img src="img\promise-price.png" alt="脱毛プラン＆料金を見る"></a>
          </div>
        </div>
 
@@ -448,41 +448,7 @@
           contact2
 
     =================================================================== -->
-    <section class="contact2">
-      <div class="google-map-border">
-        <div class="google-map">
-        </div>
-      </div>
-      <div class="detail">
-        <h2>脱毛サロン うるる</h2>
-        <p>ご予約や無料ご相談はこちらのお電話から</p>
-        <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
-        <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
-        <p>定休日/不定休</p>
-        <p>受付時間/午前11時～12時 13時～19時</p>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>診療時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>11:00~12:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
-            </tr>
-            <tr>
-              <td>13:00~19:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="clearfix">
-          <a href="salon.html#access" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
-        </div>
-      </div>
-      <div class="clearfix">
-        <a href="#" class="fr back-to-top"><i class="b64 fas fa-chevron-up" style="display:none;"></i></a>
-      </div>
-    </section>
+    <div id="contact2"></div>
      <!-- ====================================================================
 
            footer

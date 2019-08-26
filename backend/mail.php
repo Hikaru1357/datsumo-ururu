@@ -11,7 +11,7 @@ $body = "ホームページからお問い合わせがありました。";
 
 $body2 = makeBody($form);
 if(empty($body2)) {
-    header("Location: ./../otoiawase.php");
+    header("Location: ./../otoiawase");
     exit;
 }
 $body .= $body2;
@@ -63,10 +63,10 @@ try {
     $mail->send();
     echo 'Message has been sent';
     $_SESSION = [];
-    header("Location:./../otoiawase-done.php");
+    header("Location:./../otoiawase-done");
 
 } catch (Exception $e) {
-    header("Location:./../otoiawase.php");
+    header("Location:./../otoiawase");
 }
 
 

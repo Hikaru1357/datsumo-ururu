@@ -9,11 +9,11 @@ $validate->checkRequired($clean, $form);
 
 if($validate->error) {
     $_SESSION['error'] = $validate->error;
-    header("Location: ./../otoiawase.php");
+    header("Location: ./../otoiawase");
 }
 else {
     $_SESSION['error'] = "";
-    header("Location: ./../otoiawase-confirm.php");
+    header("Location: ./../otoiawase-confirm");
 }
 
 //----------------------------------------------------------------
@@ -22,7 +22,7 @@ function sanitizeRequest($request) {
     if( !empty($request) ) {
         foreach( $request as $key => $value ) {
             $clean[$key] = htmlspecialchars( $value, ENT_QUOTES);
-        } 
+        }
     }
     return $clean;
 }
@@ -54,7 +54,7 @@ class requestValidation {
                 continue;
             }
             if(empty($value) && $form[$key]['required'] == true) {
-                $this->error[] = $form[$key]['namejp'] . 'は必須項目です。'; 
+                $this->error[] = $form[$key]['namejp'] . 'は必須項目です。';
             }
         }
     }
