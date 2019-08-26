@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,6 +20,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137177856-4"></script>
     <script>
+      $(function(){
+        $("#header").load("./common/header.html");
+        $("#footer").load("./common/footer.html");
+
+      });
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -29,12 +33,7 @@
     </script>
   </head>
   <body>
-    <script>
-    $(function(){
-      $("#header").load("common/header.html");
-    });
-    </script>
-  
+    <div id="header"></div>
    <div class="mask" style="display: none; position: fixed; top: 0; left:0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); z-index: 1000;"></div>
    <div class="main">
      <!-- ====================================================================
@@ -489,30 +488,8 @@
            footer
 
      =================================================================== -->
-   <footer>
-     <nav>
-       <ul>
-         <li><a href="index.html">トップページ</a></li>
-         <li><a href="salon.html">当サロンについて</a></li>
-         <li><a href="flow.html">脱毛の流れ</a></li>
-         <li><a href="menu.html">脱毛メニュー・料金</a></li>
-         <li><a href="blogs">スタッフブログ</a></li>
-         <li><a href="otoiawase.php">ご予約、お問い合わせ</a></li>
-         <li><a href="sitemap.html">サイトマップ</a></li>
-       </ul>
-     </nav>
-     <div class="sns">
-       <a href="https://line.me/R/ti/p/%40tmd4509a"><img src="img\footer-line.png" alt="Line@"></a>
+    <div id="footer"></div>
 
-       <a href="https://instagram.com/kojikoji1997?igshid=1b11h3o0hhd52"><img src="img\footer-insta.png" alt="instagram"></a>
-
-       <a href="https://twitter.com/ururu_datsumo?ref_src=twsrc%5Etfw" data-show-count="false"><img src="img\footer-twitter.png" alt="Twitter"></a>
-       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-       <a href="https://www.facebook.com/%E8%84%B1%E6%AF%9B%E3%82%B5%E3%83%AD%E3%83%B3-%E3%81%86%E3%82%8B%E3%82%8B-101603207864842/"><img src="img\footer-facebook.png" alt="Facebook"></a>
-     </div>
-     <p>COPYRIGHT (C) 脱毛サロンうるる ALL RIGHTS RESERVED.</p>
-   </footer>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHTZOwVoBG7sIBs1WRNqPysU2e5UBruA&language=ja"></script>
   </body>
 </html>
