@@ -27,50 +27,6 @@ $(function(){
    }
  });
 
-// our-businessにscroll
- $('.scroll-business').click(function(){
-   $('.menu-icon').slideUp();
-   $('.mask').fadeOut();
-   var id = $(this).attr('href');
-   var position = $(id).offset().top;
-   $('html, body').animate({
-     'scrollTop':position
-    },500)
-  });
-
-// greetingにscroll
-$('.scroll-greeting').click(function(){
-  $('.menu-icon').slideUp();
-  $('.mask').fadeOut();
-  var id = $(this).attr('href');
-  var position = $(id).offset().top;
-  $('html, body').animate({
-    'scrollTop':position
-   },500)
- });
-
- // campanyにscroll
- $('.scroll-campany').click(function(){
-   $('.menu-icon').slideUp();
-   $('.mask').fadeOut();
-   var id = $(this).attr('href');
-   var position = $(id).offset().top;
-   $('html, body').animate({
-     'scrollTop':position
-    },500)
-  });
-
-  // contactにscroll
-  $('.scroll-contact').click(function(){
-    $('.menu-icon').slideUp();
-    $('.mask').fadeOut();
-    var id = $(this).attr('href');
-    var position = $(id).offset().top;
-    $('html, body').animate({
-      'scrollTop':position
-     },500)
-   });
-
  // topにscroll
   $('.back-to-top').click(function(){
     $('html, body').animate({

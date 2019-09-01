@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/animation.js"></script>
+    <!-- <script src="js/animation.js"></script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137177856-4"></script>
     <script>
@@ -53,12 +53,13 @@
            </div>
            <div class="call">
              <p>お電話でのご予約やお問い合わせ</p>
-             <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
+             <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});"><img src="img\contact-phone.png"
+               alt="電話番号">06-7183-0657</a>
              <p>定休日/不定休</p>
              <p>受付時間/午前11時～12時 13時～19時</p>
            </div>
          </div>
-         <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});" class="b64 sp-header"><i class="fas fa-phone"></i></a>
+         <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});" class="b64 sp-header"><i class="fas fa-phone"></i></a>
          <a href="otoiawase" class="b64 sp-header"><i class="fas fa-envelope"></i></a>
          <a href="#" class="b64 sp-header open-menu"><i class="fas fa-bars"></i></a>
          <nav class="menu-icon" style="display:none">
@@ -88,7 +89,30 @@
    </header>
 
    <div class="mask" style="display: none; position: fixed; top: 0; left:0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); z-index: 1000;"></div>
-   <div class="main">
+
+   <ul class="breadcrumb">
+      <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+          <span class="fas fa-home"></span>
+          <span itemprop="title">ホーム ></span>
+        </a>
+      </li>
+      <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="otoiawase" itemprop="url">
+          <span itemprop="title">ご予約、お問い合わせ</span>
+        </a>
+      </li>
+      <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="otoiawase-confirm" itemprop="url">
+          <span itemprop="title">お問い合わせ確認</span>
+        </a>
+      </li>
+      <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="otoiawase-done" itemprop="url">
+          <span itemprop="title">お問い合わせ完了</span>
+        </a>
+      </li>
+   </ul>
      <!-- ====================================================================
 
            otoiawase-done
@@ -109,7 +133,6 @@
       </p>
       <a href="/">トップページへ戻る</a>
     </section>
-   </div>
     <!-- ====================================================================
 
           contact2
@@ -124,7 +147,7 @@
         <div class="detail">
           <h2>脱毛サロン うるる</h2>
           <p>ご予約や無料ご相談はこちらのお電話から</p>
-          <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
+          <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});"><img src="img\contact-phone.png" alt="電話番号">06-7183-0657</a>
           <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
           <p>定休日/不定休</p>
           <p>受付時間/午前11時～12時 13時～19時</p>

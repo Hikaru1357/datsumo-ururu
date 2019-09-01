@@ -145,6 +145,7 @@
   width:100%;
   padding: 7.5px 0;
   border-left: 1px solid #a7a7a7;
+  font-weight: 600;
 }
 
 .header-inner nav ul li:last-of-type{
@@ -236,6 +237,18 @@
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
   }
+}
+
+.breadcrumb{
+  padding: 1% 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.breadcrumb li{
+  display:inline;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 /* ====================================================================

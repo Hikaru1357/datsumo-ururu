@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/animation.js"></script>
+    <!-- <script src="js/animation.js"></script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137177856-4"></script>
     <script>
@@ -51,12 +51,12 @@
            </div>
            <div class="call">
              <p>お電話でのご予約やお問い合わせ</p>
-             <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
+             <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});"><img src="img\contact-phone.png" alt="電話番号">06-7183-0657</a>
              <p>定休日/不定休</p>
              <p>受付時間/午前11時～12時 13時～19時</p>
            </div>
          </div>
-         <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});" class="b64 sp-header"><i class="fas fa-phone"></i></a>
+         <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});" class="b64 sp-header"><i class="fas fa-phone"></i></a>
          <a href="otoiawase" class="b64 sp-header"><i class="fas fa-envelope"></i></a>
          <a href="#" class="b64 sp-header open-menu"><i class="fas fa-bars"></i></a>
          <nav class="menu-icon" style="display:none">
@@ -86,486 +86,493 @@
    </header>
 
    <div class="mask" style="display: none; position: fixed; top: 0; left:0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); z-index: 1000;"></div>
-   <div class="main">
+
+   <ul class="breadcrumb">
+      <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+          <span class="fas fa-home"></span>
+          <span itemprop="title">ホーム</span>
+        </a>
+      </li>
+   </ul>
      <!-- ====================================================================
 
            main_visual
 
      =================================================================== -->
-     <section class="main-visual">
-       <img src="img\mainvisual.jpg" alt="診察している女性2人">
-       <div class="main-catchcopy">
-         <img src="img\main-catchcopy.png" alt="肌の綺麗なお姉さんは好きですか？ううるは、そんなあなたになれるよう、お手伝いさせていただきます">
-         <!-- <p>肌の綺麗なお姉さんは好きですか？</p>
-         <p>ううるは、そんなあなたになれるよう、<br>お手伝いさせていただきます</p> -->
-       </div>
-     </section>
+   <section class="main-visual">
+     <img src="img\mainvisual.jpg" alt="診察している女性2人">
+     <div class="main-catchcopy">
+       <img src="img\main-catchcopy.png" alt="肌の綺麗なお姉さんは好きですか？ううるは、そんなあなたになれるよう、お手伝いさせていただきます">
+       <!-- <p>肌の綺麗なお姉さんは好きですか？</p>
+       <p>ううるは、そんなあなたになれるよう、<br>お手伝いさせていただきます</p> -->
+     </div>
+   </section>
      <!-- ====================================================================
 
            contact
 
      =================================================================== -->
-     <section class="contact">
-       <div class="google-map-border">
-         <div id="map" class="">
-         </div>
+   <section class="contact">
+     <div class="google-map-border">
+       <div id="map" class="">
        </div>
-       <div class="detail">
-         <h2>脱毛サロン うるる</h2>
-         <p>ご予約や無料ご相談はこちらのお電話から</p>
-         <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
-         <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
-         <p>定休日/不定休</p>
-         <p>受付時間/午前11時～12時 13時～19時</p>
-         <table border="1">
-           <thead>
-             <tr>
-               <th>診療時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <td>11:00~12:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
-             </tr>
-             <tr>
-               <td>13:00~19:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
-             </tr>
-           </tbody>
-         </table>
-         <div class="clearfix">
-           <a href="salon#access" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
-         </div>
+     </div>
+     <div class="detail">
+       <h2>脱毛サロン うるる</h2>
+       <p>ご予約や無料ご相談はこちらのお電話から</p>
+       <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});"><img src="img\contact-phone.png" alt="電話番号">06-7183-0657</a>
+       <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
+       <p>定休日/不定休</p>
+       <p>受付時間/午前11時～12時 13時～19時</p>
+       <table border="1">
+         <thead>
+           <tr>
+             <th>診療時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>11:00~12:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
+           </tr>
+           <tr>
+             <td>13:00~19:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
+           </tr>
+         </tbody>
+       </table>
+       <div class="clearfix">
+         <a href="salon#access" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
        </div>
-     </section>
+     </div>
+   </section>
      <!-- ====================================================================
 
            icons
 
      =================================================================== -->
-     <section class="icons">
-       <div class="icon">
-         <div class="icon-inner">
-           <img src="img\icon-about.png" alt="当サロンについて">
-           <p>About</p>
-           <h2>当サロンについて</h2>
-           <a href="salon"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
-         </div>
+   <section class="icons">
+     <div class="icon">
+       <div class="icon-inner">
+         <img src="img\icon-about.png" alt="当サロンについて">
+         <p>About</p>
+         <h2>当サロンについて</h2>
+         <a href="salon"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
        </div>
-       <div class="icon">
-         <div class="icon-inner">
-           <img src="img\icon-flow.png" alt="施術の流れ">
-           <p>Flow</p>
-           <h2>施術の流れ</h2>
-           <a href="flow"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
-         </div>
+     </div>
+     <div class="icon">
+       <div class="icon-inner">
+         <img src="img\icon-flow.png" alt="施術の流れ">
+         <p>Flow</p>
+         <h2>施術の流れ</h2>
+         <a href="flow"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
        </div>
-       <div class="icon">
-         <div class="icon-inner">
-           <img src="img\icon-price.png" alt="料金・メニュー">
-           <p>Price</p>
-           <h2>料金・メニュー</h2>
-           <a href="menu"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
-         </div>
+     </div>
+     <div class="icon">
+       <div class="icon-inner">
+         <img src="img\icon-price.png" alt="料金・メニュー">
+         <p>Price</p>
+         <h2>料金・メニュー</h2>
+         <a href="menu"><img src="img\icon-detail.png" alt="詳しくはこちら"></a>
        </div>
-     </section>
+     </div>
+   </section>
      <!-- ====================================================================
 
            reasons
 
      =================================================================== -->
-     <section class="reasons">
-       <div class="reasons-ttl">
-         <img src="img\reasons-ttl.png" alt="reasons">
-         <h2>うるるが選ばれる理由</h2>
+   <section class="reasons">
+     <div class="reasons-ttl">
+       <img src="img\reasons-ttl.png" alt="reasons">
+       <h2>うるるが選ばれる理由</h2>
+     </div>
+     <div class="cost-performance">
+       <h3><span>01.</span>高いコストパフォーマンス</h3>
+       <div class="nb64 each-reason">
+         <h4 style="display:none;">安さの秘訣</h4>
+         <p>うるるでは、全身脱毛の場合、<b>顔、VIOを含む<br class="b48"><span class="remarkable">全身42箇所<br class="b48">14,666円</span><br class="b48">(※全身脱毛1回あたり)</b><br class="b48">で施術を承っております。<br>
+           当サロンでは、機器メーカーから直営でお取り寄せしております。また、お手入れの際に必要なジェルやローションなどの消耗品は一括仕入れで行っております。<br>
+           これにより、品質を下げることなく、大幅にコストダウンさせることができました。</p>
+         <img src="img\reasons-cheep.png" alt="安さの秘訣">
        </div>
-       <div class="cost-performance">
-         <h3><span>01.</span>高いコストパフォーマンス</h3>
-         <div class="nb64 each-reason">
-           <h4 style="display:none;">安さの秘訣</h4>
-           <p>うるるでは、全身脱毛の場合、<b>顔、VIOを含む<br class="b48"><span class="remarkable">全身42箇所<br class="b48">14,666円</span><br class="b48">(※全身脱毛1回あたり)</b><br class="b48">で施術を承っております。<br>
-             当サロンでは、機器メーカーから直営でお取り寄せしております。また、お手入れの際に必要なジェルやローションなどの消耗品は一括仕入れで行っております。<br>
-             これにより、品質を下げることなく、大幅にコストダウンさせることができました。</p>
-           <img src="img\reasons-cheep.png" alt="安さの秘訣">
-         </div>
-         <div class="b64 each-reason">
-           <h4 style="display:none;">安さの秘訣</h4>
-           <img src="img\reasons-cheep.png" alt="安さの秘訣">
-           <p>うるるでは、全身脱毛の場合、<b>顔、VIOを含む<br class="b48"><span class="remarkable">全身42箇所<br class="b48">14,666円</span><br class="b48">(※全身脱毛1回あたり)</b><br class="b48">で施術を承っております。<br>
-             当サロンでは、機器メーカーから直営でお取り寄せしております。また、お手入れの際に必要なジェルやローションなどの消耗品は一括仕入れで行っております。<br>
-             これにより、品質を下げることなく、大幅にコストダウンさせることができました。</p>
-         </div>
-         <div class="each-reason">
-           <h4 style="display:none;">無駄な経費をカット</h4>
-           <img src="img\reasons-cut.png" alt="無駄な経費をカット">
-           <p>店内の内装や広告費を最低限に抑えることで、無駄な負担をカット。いつでも<span>「綺麗」</span>に<span>「お得」</span>に、うるるはそれを実現しました。</p>
-         </div>
-         <p class="scrollable b64">↓横にスクロールできます</p>
-         <table>
-           <thead>
-             <tr>
-               <th>サロン</th><th>回数</th><th>全身脱毛1回あたり(税抜)</th><th>次回までの間隔</th><th>その他</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <td>うるる</td><td>12回+3回<br><small>サービス</small></td><td>14,666円</td><td>1ヶ月</td><td>全身すべて込み<br>(顔から足の指先まで全身<br>42箇所)</td>
-             </tr>
-             <tr>
-               <td>A社</td><td>18回</td><td>17,442円</td><td>2ヶ月</td><td>全身すべて込み</td>
-             </tr>
-             <tr>
-               <td>B社</td><td>12回</td><td>22,498円</td><td>2週間</td><td>全身すべて込み</td>
-             </tr>
-             <tr>
-               <td>C社</td><td>6回</td><td>14,660円</td><td>3ヶ月</td><td>顔、I、O以外の全身</td>
-             </tr>
-             <tr>
-               <td>D社</td><td>6回</td><td>31,500円</td><td>1ヶ月</td><td>顔以外の全身</td>
-             </tr>
-           </tbody>
-         </table>
+       <div class="b64 each-reason">
+         <h4 style="display:none;">安さの秘訣</h4>
+         <img src="img\reasons-cheep.png" alt="安さの秘訣">
+         <p>うるるでは、全身脱毛の場合、<b>顔、VIOを含む<br class="b48"><span class="remarkable">全身42箇所<br class="b48">14,666円</span><br class="b48">(※全身脱毛1回あたり)</b><br class="b48">で施術を承っております。<br>
+           当サロンでは、機器メーカーから直営でお取り寄せしております。また、お手入れの際に必要なジェルやローションなどの消耗品は一括仕入れで行っております。<br>
+           これにより、品質を下げることなく、大幅にコストダウンさせることができました。</p>
        </div>
-       <div class="latest-machine">
-         <h3><span>02.</span>最新の高品質な脱毛器</h3>
-         <div class="nb64 each-reason">
-           <h4 style="display:none;">クオリティーの高い光脱毛</h4>
-           <p>光脱毛は医療レーザー脱毛と違い、効果が薄いと思われがちです。<br>
-             確かにレーザー脱毛は効果が高いですが、その分高額で、痛みを伴うという欠点がございます。<br>
-             しかし、うるるで使用している脱毛器は、痛みもほとんどなく、機能性に優れたものです。<br class="b48">(詳細は下記の比較図を参照)<br>
-            <span>「脱毛器にこだわる」</span>そこがうるるが一番の強みとしている点です。
-           </p>
-           <img src="img\reasons-puality.png" alt="クオリティーの高い脱毛器">
-         </div>
-         <div class="b64 each-reason">
-           <h4 style="display:none;">クオリティーの高い光脱毛</h4>
-           <img src="img\reasons-puality.png" alt="クオリティーの高い脱毛器">
-           <p>光脱毛は医療レーザー脱毛と違い、効果が薄いと思われがちです。<br>
-             確かにレーザー脱毛は効果が高いですが、その分高額で、痛みを伴うという欠点がございます。<br>
-             しかし、うるるで使用している脱毛器は、痛みもほとんどなく、機能性に優れたものです。<br class="b48">(詳細は下記の比較図を参照)<br>
-            <span>「脱毛器にこだわる」</span>そこがうるるが一番の強みとしている点です。
-           </p>
-         </div>
+       <div class="each-reason">
+         <h4 style="display:none;">無駄な経費をカット</h4>
+         <img src="img\reasons-cut.png" alt="無駄な経費をカット">
+         <p>店内の内装や広告費を最低限に抑えることで、無駄な負担をカット。いつでも<span>「綺麗」</span>に<span>「お得」</span>に、うるるはそれを実現しました。</p>
        </div>
-       <p class="b64">↓横にスクロールできます</p>
-       <table class="machine-comparison">
+       <p class="scrollable b64">↓横にスクロールできます</p>
+       <table>
          <thead>
            <tr>
-             <th></th><th>他サロン従来マシン</th><th>他サロン高速マシン</th><th>うるるの最新高速マシン</th>
+             <th>サロン</th><th>回数</th><th>全身脱毛1回あたり(税抜)</th><th>次回までの間隔</th><th>その他</th>
            </tr>
          </thead>
          <tbody>
            <tr>
-             <td>スピード</td><td><span>△</span><br>1~5秒に1発の照射</td><td><span>〇</span><br>0.2秒に1発の照射</td><td><span>〇</span><br>0.1秒に1発の照射</td>
+             <td>うるる</td><td>12回+3回<br><small>サービス</small></td><td>14,666円</td><td>1ヶ月</td><td>全身すべて込み<br>(顔から足の指先まで全身<br>42箇所)</td>
            </tr>
            <tr>
-             <td>痛み</td><td>輪ゴムをはじいた<br>ような痛み</td><td>温かく感じる程度</td><td>温かく感じる程度</td>
+             <td>A社</td><td>18回</td><td>17,442円</td><td>2ヶ月</td><td>全身すべて込み</td>
            </tr>
            <tr>
-             <td>効果</td><td>機械によって異なる</td><td><span>△</span><br>かなりの回数が必要<br>長期間通う必要あり</td><td><span>〇</span><br>細かく、強い光を使用<br>肌の奥まで届きやすく<br>高い効果が期待できる</td>
+             <td>B社</td><td>12回</td><td>22,498円</td><td>2週間</td><td>全身すべて込み</td>
            </tr>
            <tr>
-             <td>特徴</td><td>エステサロンの多くが<br>従来マシンを使用</td><td>大手サロンに多く、<br>お手入れの時間は短いが<br>弱い光を使用しているため<br>効果が出にくい</td><td>左記の高速マシンの弱点を改善<br>きめ細かい光で美肌効果を実現</td>
+             <td>C社</td><td>6回</td><td>14,660円</td><td>3ヶ月</td><td>顔、I、O以外の全身</td>
+           </tr>
+           <tr>
+             <td>D社</td><td>6回</td><td>31,500円</td><td>1ヶ月</td><td>顔以外の全身</td>
            </tr>
          </tbody>
        </table>
-     </section>
+     </div>
+     <div class="latest-machine">
+       <h3><span>02.</span>最新の高品質な脱毛器</h3>
+       <div class="nb64 each-reason">
+         <h4 style="display:none;">クオリティーの高い光脱毛</h4>
+         <p>光脱毛は医療レーザー脱毛と違い、効果が薄いと思われがちです。<br>
+           確かにレーザー脱毛は効果が高いですが、その分高額で、痛みを伴うという欠点がございます。<br>
+           しかし、うるるで使用している脱毛器は、痛みもほとんどなく、機能性に優れたものです。<br class="b48">(詳細は下記の比較図を参照)<br>
+          <span>「脱毛器にこだわる」</span>そこがうるるが一番の強みとしている点です。
+         </p>
+         <img src="img\reasons-puality.png" alt="クオリティーの高い脱毛器">
+       </div>
+       <div class="b64 each-reason">
+         <h4 style="display:none;">クオリティーの高い光脱毛</h4>
+         <img src="img\reasons-puality.png" alt="クオリティーの高い脱毛器">
+         <p>光脱毛は医療レーザー脱毛と違い、効果が薄いと思われがちです。<br>
+           確かにレーザー脱毛は効果が高いですが、その分高額で、痛みを伴うという欠点がございます。<br>
+           しかし、うるるで使用している脱毛器は、痛みもほとんどなく、機能性に優れたものです。<br class="b48">(詳細は下記の比較図を参照)<br>
+          <span>「脱毛器にこだわる」</span>そこがうるるが一番の強みとしている点です。
+         </p>
+       </div>
+     </div>
+     <p class="b64">↓横にスクロールできます</p>
+     <table class="machine-comparison">
+       <thead>
+         <tr>
+           <th></th><th>他サロン従来マシン</th><th>他サロン高速マシン</th><th>うるるの最新高速マシン</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>スピード</td><td><span>△</span><br>1~5秒に1発の照射</td><td><span>〇</span><br>0.2秒に1発の照射</td><td><span>〇</span><br>0.1秒に1発の照射</td>
+         </tr>
+         <tr>
+           <td>痛み</td><td>輪ゴムをはじいた<br>ような痛み</td><td>温かく感じる程度</td><td>温かく感じる程度</td>
+         </tr>
+         <tr>
+           <td>効果</td><td>機械によって異なる</td><td><span>△</span><br>かなりの回数が必要<br>長期間通う必要あり</td><td><span>〇</span><br>細かく、強い光を使用<br>肌の奥まで届きやすく<br>高い効果が期待できる</td>
+         </tr>
+         <tr>
+           <td>特徴</td><td>エステサロンの多くが<br>従来マシンを使用</td><td>大手サロンに多く、<br>お手入れの時間は短いが<br>弱い光を使用しているため<br>効果が出にくい</td><td>左記の高速マシンの弱点を改善<br>きめ細かい光で美肌効果を実現</td>
+         </tr>
+       </tbody>
+     </table>
+   </section>
 
      <!-- ====================================================================
 
            voice
 
      =================================================================== -->
-     <section class="voice">
-       <img src="img\salon-voice-Voice.png" alt="voice">
-       <h2>お客様の声</h2>
-       <div class="voices">
-         <div class="each-voice">
-           <p>● S・Hさん（女性/20代前半/会社員）<br class="b64" style="line-height:1.5;"><span>【全身脱毛】</span></p>
-           <div class="voice-content">
-             <p>・本日こちらでさせていただきました!<br>
-               時間も早く終わり痛みもなくとても良かったです!
+   <section class="voice">
+     <img src="img\salon-voice-Voice.png" alt="voice">
+     <h2>お客様の声</h2>
+     <div class="voices">
+       <div class="each-voice">
+         <p>● S・Hさん（女性/20代前半/会社員）<br class="b64" style="line-height:1.5;"><span>【全身脱毛】</span></p>
+         <div class="voice-content">
+           <p>・本日こちらでさせていただきました!<br>
+             時間も早く終わり痛みもなくとても良かったです!
+           </p>
+           <a href="#" class="comment">
+             <img class="accordion-arrow" src="img\salon-voice-reply.png" alt="サロンからの返信コメント">
+             <p>サロンからの返信コメント</p>
+             <p style="display:none;" class="reply">S・H様
+               先日はご来店頂きありがとうございました。
+               口コミありがとうございます。またのご来店心よりお待ちしております。
+               うるる スタッフ
              </p>
-             <a href="#" class="comment">
-               <img class="accordion-arrow" src="img\salon-voice-reply.png" alt="サロンからの返信コメント">
-               <p>サロンからの返信コメント</p>
-               <p style="display:none;" class="reply">S・H様
-                 先日はご来店頂きありがとうございました。
-                 口コミありがとうございます。またのご来店心よりお待ちしております。
-                 うるる スタッフ
-               </p>
-             </a>
-           </div>
+           </a>
          </div>
-         <div class="each-voice">
-           <p>●R・Hさん（女性/20代後半/会社員）<br class="b64" style="line-height:1.5;"><span>【脇・背中・指】</span></p>
-           <div class="voice-content">
-             <p>・店内は清潔感があり、気持ちよく施術ができました｡<br>
-               時間も取らずに手際よく施術してくださり、<br>
-               お値段も良心的です。また時間を見つけてお邪魔します。
-             </p>
-             <a href="#" class="comment">
-               <img class="accordion-arrow" src="img\salon-voice-reply.png" alt="サロンからの返信コメント">
-               <p>サロンからの返信コメント</p>
-               <p style="display:none;" class="reply">R・H様
-                 先日はご来店頂きありがとうございました。
-                 嬉しい口コミをご投稿頂きありがとうございます。R・H様のまたのご来店、心よりお待ち致しております。
-                 うるる スタッフ
-               </p>
-             </a>
-           </div>
-         </div>
-         <div class="each-voice">
-           <p>●A・Kさん（女性/20代前半/会社員）<br class="b64" style="line-height:1.5;"><span>【全身脱毛】</span></p>
-           <div class="voice-content">
-             <p>・2回目の脱毛でした。<br>
-               一つ一つ声掛けをしてくれるのもありがたかったです。<br>
-               またよろしくお願いします。
-             </p>
-             <a href="#" class="comment">
-               <img class="accordion-arrow" src="img\salon-voice-reply.png" alt="サロンからの返信コメント">
-               <p>サロンからの返信コメント</p>
-               <p style="display:none;" class="reply">A・K様
-                 先日はご来店頂きありがとうございました。
-                 お手間を取らせてしまったのにも関わらずこのような口コミを頂き感謝しております。
-                 3ヶ月後にはツルツルになって、お手入れの手間も省けるようになりますよ♫
-                 楽しみにしていてくださいね！
-                 次回もお会いできるのを心よりお待ち致しております。ご来店ありがとうございました。
-                 うるる スタッフ
-               </p>
-             </a>
-           </div>
-         </div>
-         <div class="each-voice">
-           <p>●M・Aさん（女性/20代前半/学生）<br class="b64" style="line-height:1.5;"><span>【脇・顔】</span></p>
-           <div class="voice-content">
-             <p>・とにかく施術が早いです。パッと帰れる感じです。<br>
-               施術は本当に痛みがありません。痛みがなさすぎて結果が出るのか心配になりましたがそこも問題ありませんでした！<br>
-               今後も通うのが楽しみです！よろしくお願いします。
-             </p>
-             <a href="#" class="comment">
-               <img class="accordion-arrow" src="img\salon-voice-reply.png" alt="サロンからの返信コメント">
-               <p>サロンからの返信コメント</p>
-               <p style="display:none;" class="reply">M・A様
-                 口コミ投稿ありがとうございます！
-                 最高の夏を迎えられるように、最後まで精一杯お手伝いさせて頂きますね！
-                 次回もご来店楽しみにしていますね♫
-                 うるる スタッフ
-               </p>
-             </a>
-           </div>
-         </div>
-         <a href="salon#voice"><img src="img\top-to-voice.png" alt="うるるの口コミをもっと見る"></a>
-        </div>
        </div>
+       <div class="each-voice">
+         <p>●R・Hさん（女性/20代後半/会社員）<br class="b64" style="line-height:1.5;"><span>【脇・背中・指】</span></p>
+         <div class="voice-content">
+           <p>・店内は清潔感があり、気持ちよく施術ができました｡<br>
+             時間も取らずに手際よく施術してくださり、<br>
+             お値段も良心的です。また時間を見つけてお邪魔します。
+           </p>
+           <a href="#" class="comment">
+             <img class="accordion-arrow" src="img\salon-voice-reply.png" alt="サロンからの返信コメント">
+             <p>サロンからの返信コメント</p>
+             <p style="display:none;" class="reply">R・H様
+               先日はご来店頂きありがとうございました。
+               嬉しい口コミをご投稿頂きありがとうございます。R・H様のまたのご来店、心よりお待ち致しております。
+               うるる スタッフ
+             </p>
+           </a>
+         </div>
+       </div>
+       <div class="each-voice">
+         <p>●A・Kさん（女性/20代前半/会社員）<br class="b64" style="line-height:1.5;"><span>【全身脱毛】</span></p>
+         <div class="voice-content">
+           <p>・2回目の脱毛でした。<br>
+             一つ一つ声掛けをしてくれるのもありがたかったです。<br>
+             またよろしくお願いします。
+           </p>
+           <a href="#" class="comment">
+             <img class="accordion-arrow" src="img\salon-voice-reply.png" alt="サロンからの返信コメント">
+             <p>サロンからの返信コメント</p>
+             <p style="display:none;" class="reply">A・K様
+               先日はご来店頂きありがとうございました。
+               お手間を取らせてしまったのにも関わらずこのような口コミを頂き感謝しております。
+               3ヶ月後にはツルツルになって、お手入れの手間も省けるようになりますよ♫
+               楽しみにしていてくださいね！
+               次回もお会いできるのを心よりお待ち致しております。ご来店ありがとうございました。
+               うるる スタッフ
+             </p>
+           </a>
+         </div>
+       </div>
+       <div class="each-voice">
+         <p>●M・Aさん（女性/20代前半/学生）<br class="b64" style="line-height:1.5;"><span>【脇・顔】</span></p>
+         <div class="voice-content">
+           <p>・とにかく施術が早いです。パッと帰れる感じです。<br>
+             施術は本当に痛みがありません。痛みがなさすぎて結果が出るのか心配になりましたがそこも問題ありませんでした！<br>
+             今後も通うのが楽しみです！よろしくお願いします。
+           </p>
+           <a href="#" class="comment">
+             <img class="accordion-arrow" src="img\salon-voice-reply.png" alt="サロンからの返信コメント">
+             <p>サロンからの返信コメント</p>
+             <p style="display:none;" class="reply">M・A様
+               口コミ投稿ありがとうございます！
+               最高の夏を迎えられるように、最後まで精一杯お手伝いさせて頂きますね！
+               次回もご来店楽しみにしていますね♫
+               うるる スタッフ
+             </p>
+           </a>
+         </div>
+       </div>
+       <a href="salon#voice"><img src="img\top-to-voice.png" alt="うるるの口コミをもっと見る"></a>
+      </div>
+     </div>
 
-       <div class="phone-here">
-         <p>ご予約や無料ご相談は<br class="b48">こちらのお電話から</p>
-         <div class="phone-here-inner">
-           <div class="phone-here-left">
-             <p>↓ 脱毛サロン うるる ↓</p>
-             <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
-           </div>
-           <div class="phone-here-right">
-             <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
-             <p>定休日/不定休</p>
-             <p>受付時間/午前11時～12時 13時～19時</p>
-           </div>
+     <div class="phone-here">
+       <p>ご予約や無料ご相談は<br class="b48">こちらのお電話から</p>
+       <div class="phone-here-inner">
+         <div class="phone-here-left">
+           <p>↓ 脱毛サロン うるる ↓</p>
+           <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});"><img src="img\contact-phone.png" alt="電話番号">06-7183-0657</a>
+         </div>
+         <div class="phone-here-right">
+           <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
+           <p>定休日/不定休</p>
+           <p>受付時間/午前11時～12時 13時～19時</p>
          </div>
        </div>
-     </section>
+     </div>
+   </section>
      <!-- ====================================================================
 
            promise
 
      =================================================================== -->
-     <section class="declaration">
-       <p>安心・高品質を<br>リーズナブルに。</p>
-       <p>うるるは、大阪難波にある<br>こじんまりとした雰囲気の、<br class="b48">小さな脱毛サロンです。<br>
-          当サロンは完全個室となっており、<br>
-          何よりあなたに喜んでもらえる工夫を施しております。
-        </p>
-     </section>
-     <section class="promise">
-       <div class="promise-inner">
-         <img src="img\promise-ttl.png" alt="promise">
-         <div class="seven-promises">
-           <h2 style="display:none;">7つのお約束</h2>
-           <div class="each-promise">
-             <img src="img\promise-1.png" alt="1番目のお約束">
-             <div class="each-promise-inner">
-               <h3>入会金、追加料金一切なし</h3>
-               <p>うるるではメニューに記載されている金額以外は一切頂きません。<br>
-                 もちろん入会費・年会費・ジェル代・化粧品など、脱毛料金以外の費用は一切掛かりませんのでご安心下さい。
-                 また毛質や毛量、体質によって料金が変わることはありません。
-               </p>
-             </div>
+   <section class="declaration">
+     <p>安心・高品質を<br>リーズナブルに。</p>
+     <p>うるるは、大阪難波にある<br>こじんまりとした雰囲気の、<br class="b48">小さな脱毛サロンです。<br>
+        当サロンは完全個室となっており、<br>
+        何よりあなたに喜んでもらえる工夫を施しております。
+      </p>
+   </section>
+   <section class="promise">
+     <div class="promise-inner">
+       <img src="img\promise-ttl.png" alt="promise">
+       <div class="seven-promises">
+         <h2 style="display:none;">7つのお約束</h2>
+         <div class="each-promise">
+           <img src="img\promise-1.png" alt="1番目のお約束">
+           <div class="each-promise-inner">
+             <h3>入会金、追加料金一切なし</h3>
+             <p>うるるではメニューに記載されている金額以外は一切頂きません。<br>
+               もちろん入会費・年会費・ジェル代・化粧品など、脱毛料金以外の費用は一切掛かりませんのでご安心下さい。
+               また毛質や毛量、体質によって料金が変わることはありません。
+             </p>
            </div>
-           <div class="each-promise">
-             <img src="img\promise-2.png" alt="2番目のお約束">
-             <div class="each-promise-inner">
-               <h3>無料相談、カウンセリング随時受付</h3>
-               <p>カウンセリングや相談は随時行なっています。疑問や不安な事はどんな事でもご相談下さい。<br>納得頂いた上でお手入れを開始させていただきますので、ご安心ください。</p>
-             </div>
-           </div>
-           <div class="each-promise">
-             <img src="img\promise-3.png" alt="3番目のお約束">
-             <div class="each-promise-inner">
-               <h3>無理な勧誘は致しません</h3>
-               <p>あなたの立場に立って綺麗のお手伝いを致します。誰もがストレスフリーで通えるサロン、それがうるるです。
-                 メニューは都度払いからご用意しておりますので、無理に高額なコースをオススメしたり、化粧品の販売をしたりといったことはございません。
-                 都度払いの場合は初回に2ヶ月分（2回分）頂いております。
-               </p>
-             </div>
-           </div>
-           <div class="each-promise">
-             <img src="img\promise-4.png" alt="4番目のお約束">
-             <div class="each-promise-inner">
-               <h3>スペシャリストによる施術</h3>
-               <p>カウンセリングや相談は随時行なっています。疑問や不安な事はどんな事でもご相談下さい。<br>
-                 納得頂いた上でお手入れを開始させていただきますので、ご安心下さい。
-               </p>
-             </div>
-           </div>
-           <div class="each-promise">
-             <img src="img\promise-5.png" alt="5番目のお約束">
-             <div class="each-promise-inner">
-               <h3>厳選された商材</h3>
-               <p>お手入れの際に必要なジェルローション。肌につけるものだからこそ、数多くあるブランドから厳選し、採用しております。</p>
-             </div>
-           </div>
-           <div class="each-promise">
-             <img src="img\promise-6.png" alt="6番目のお約束">
-             <div class="each-promise-inner">
-               <h3>徹底された衛生管理</h3>
-               <p>高い安全性を確保するために、消毒済みの器具を使用してお手入れを行います。まだ脱毛の際に使用するジェルは、お客様ごとに新しい物をご用意し、使い回しは一切致しません。</p>
-             </div>
-           </div>
-           <div class="each-promise">
-             <img src="img\promise-7.png" alt="7番目のお約束">
-             <div class="each-promise-inner">
-               <h3>安心の返金制度</h3>
-               <p>万が一、効果に満足いただけない場合は、残りの回数分をご返金いたします。また急なお引越しなどでサロンに通えなくなってしまった場合でもご相談下さい。</p>
-             </div>
-           </div>
-           <a href="menu"><img src="img\promise-price.png" alt="脱毛プラン＆料金を見る"></a>
          </div>
+         <div class="each-promise">
+           <img src="img\promise-2.png" alt="2番目のお約束">
+           <div class="each-promise-inner">
+             <h3>無料相談、カウンセリング随時受付</h3>
+             <p>カウンセリングや相談は随時行なっています。疑問や不安な事はどんな事でもご相談下さい。<br>納得頂いた上でお手入れを開始させていただきますので、ご安心ください。</p>
+           </div>
+         </div>
+         <div class="each-promise">
+           <img src="img\promise-3.png" alt="3番目のお約束">
+           <div class="each-promise-inner">
+             <h3>無理な勧誘は致しません</h3>
+             <p>あなたの立場に立って綺麗のお手伝いを致します。誰もがストレスフリーで通えるサロン、それがうるるです。
+               メニューは都度払いからご用意しておりますので、無理に高額なコースをオススメしたり、化粧品の販売をしたりといったことはございません。
+               都度払いの場合は初回に2ヶ月分（2回分）頂いております。
+             </p>
+           </div>
+         </div>
+         <div class="each-promise">
+           <img src="img\promise-4.png" alt="4番目のお約束">
+           <div class="each-promise-inner">
+             <h3>スペシャリストによる施術</h3>
+             <p>カウンセリングや相談は随時行なっています。疑問や不安な事はどんな事でもご相談下さい。<br>
+               納得頂いた上でお手入れを開始させていただきますので、ご安心下さい。
+             </p>
+           </div>
+         </div>
+         <div class="each-promise">
+           <img src="img\promise-5.png" alt="5番目のお約束">
+           <div class="each-promise-inner">
+             <h3>厳選された商材</h3>
+             <p>お手入れの際に必要なジェルローション。肌につけるものだからこそ、数多くあるブランドから厳選し、採用しております。</p>
+           </div>
+         </div>
+         <div class="each-promise">
+           <img src="img\promise-6.png" alt="6番目のお約束">
+           <div class="each-promise-inner">
+             <h3>徹底された衛生管理</h3>
+             <p>高い安全性を確保するために、消毒済みの器具を使用してお手入れを行います。まだ脱毛の際に使用するジェルは、お客様ごとに新しい物をご用意し、使い回しは一切致しません。</p>
+           </div>
+         </div>
+         <div class="each-promise">
+           <img src="img\promise-7.png" alt="7番目のお約束">
+           <div class="each-promise-inner">
+             <h3>安心の返金制度</h3>
+             <p>万が一、効果に満足いただけない場合は、残りの回数分をご返金いたします。また急なお引越しなどでサロンに通えなくなってしまった場合でもご相談下さい。</p>
+           </div>
+         </div>
+         <a href="menu"><img src="img\promise-price.png" alt="脱毛プラン＆料金を見る"></a>
        </div>
+     </div>
 
-       <div class="phone-here">
-         <p>ご予約や無料ご相談は<br class="b48">こちらのお電話から</p>
-         <div class="phone-here-inner">
-           <div class="phone-here-left">
-             <p>↓ 脱毛サロン うるる ↓</p>
-             <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
-           </div>
-           <div class="phone-here-right">
-             <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
-             <p>定休日/不定休</p>
-             <p>受付時間/午前11時～12時 13時～19時</p>
-           </div>
+     <div class="phone-here">
+       <p>ご予約や無料ご相談は<br class="b48">こちらのお電話から</p>
+       <div class="phone-here-inner">
+         <div class="phone-here-left">
+           <p>↓ 脱毛サロン うるる ↓</p>
+           <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});"><img src="img\contact-phone.png" alt="電話番号">06-7183-0657</a>
+         </div>
+         <div class="phone-here-right">
+           <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
+           <p>定休日/不定休</p>
+           <p>受付時間/午前11時～12時 13時～19時</p>
          </div>
        </div>
-     </section>
+     </div>
+   </section>
      <!-- ====================================================================
 
            blogs
 
      =================================================================== -->
-     <section class="blogs">
-       <img src="img\blogs-ttl.png" alt="blogs">
-       <h2>人気記事一覧</h2>
-       <div class="articles">
-         <article class="">
-           <img src="" alt="">
-           <p>2019.4.4</p>
-           <p></p>
-         </article>
-         <article class="">
-           <img src="" alt="">
-           <p>2019.4.4</p>
-           <p></p>
-         </article>
-         <article class="">
-           <img src="" alt="">
-           <p>2019.4.4</p>
-           <p></p>
-         </article>
-       </div>
-       <a href="blogs"><img src="img\blogs-more.png" alt="more"></a>
-     </section>
-    </div>
+   <section class="blogs">
+     <img src="img\blogs-ttl.png" alt="blogs">
+     <h2>人気記事一覧</h2>
+     <div class="articles">
+       <article class="">
+         <img src="" alt="">
+         <p>2019.4.4</p>
+         <p></p>
+       </article>
+       <article class="">
+         <img src="" alt="">
+         <p>2019.4.4</p>
+         <p></p>
+       </article>
+       <article class="">
+         <img src="" alt="">
+         <p>2019.4.4</p>
+         <p></p>
+       </article>
+     </div>
+     <a href="blogs"><img src="img\blogs-more.png" alt="more"></a>
+   </section>
     <!-- ====================================================================
 
           contact2
 
     =================================================================== -->
-    <!-- <div id="contact2"></div> -->
-    <section class="contact2">
-      <div class="google-map-border">
-        <div class="google-map">
-        </div>
+  <!-- <div id="contact2"></div> -->
+   <section class="contact2">
+     <div class="google-map-border">
+      <div class="google-map">
       </div>
-      <div class="detail">
-        <h2>脱毛サロン うるる</h2>
-        <p>ご予約や無料ご相談はこちらのお電話から</p>
-        <a href="tel:0671810657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671810657',});"><img src="img\contact-phone.png" alt="電話番号">06-7181-0657</a>
-        <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
-        <p>定休日/不定休</p>
-        <p>受付時間/午前11時～12時 13時～19時</p>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>診療時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>11:00~12:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
-            </tr>
-            <tr>
-              <td>13:00~19:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="clearfix">
-          <a href="salon#access" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
-        </div>
-      </div>
+     </div>
+     <div class="detail">
+      <h2>脱毛サロン うるる</h2>
+      <p>ご予約や無料ご相談はこちらのお電話から</p>
+      <a href="tel:0671830657" onclick="gtag('event','クリック',{'event_category':'電話で予約orお問い合わせ','event_label':'0671830657',});"><img src="img\contact-phone.png" alt="電話番号">06-7183-0657</a>
+      <p>〒 556-0011 大阪府大阪市浪速区難波中1-14-8</p>
+      <p>定休日/不定休</p>
+      <p>受付時間/午前11時～12時 13時～19時</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>診療時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:00~12:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
+          </tr>
+          <tr>
+            <td>13:00~19:00</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td>
+          </tr>
+        </tbody>
+      </table>
       <div class="clearfix">
-        <a href="#" class="fr back-to-top"><i class="b64 fas fa-chevron-up" style="display:none;"></i></a>
+        <a href="salon#access" class="fr to-access"><img src="img\contact-access.png" alt="アクセスはこちら"></a>
       </div>
-    </section>
+    </div>
+    <div class="clearfix">
+      <a href="#" class="fr back-to-top"><i class="b64 fas fa-chevron-up" style="display:none;"></i></a>
+    </div>
+   </section>
 
      <!-- ====================================================================
 
            footer
 
      =================================================================== -->
-    <!-- <div id="footer"></div> -->
-    <footer>
-        <nav>
-          <ul>
-            <li><a href="/">トップページ</a></li>
-            <li><a href="salon">当サロンについて</a></li>
-            <li><a href="flow">脱毛の流れ</a></li>
-            <li><a href="menu">脱毛メニュー・料金</a></li>
-            <li><a href="blogs">スタッフブログ</a></li>
-            <li><a href="otoiawase">ご予約、お問い合わせ</a></li>
-            <li><a href="sitemap">サイトマップ</a></li>
-          </ul>
-        </nav>
-        <div class="sns">
-          <a href="https://line.me/R/ti/p/%40tmd4509a"><img src="img\footer-line.png" alt="Line@"></a>
+  <!-- <div id="footer"></div> -->
+   <footer>
+      <nav>
+        <ul>
+          <li><a href="/">トップページ</a></li>
+          <li><a href="salon">当サロンについて</a></li>
+          <li><a href="flow">脱毛の流れ</a></li>
+          <li><a href="menu">脱毛メニュー・料金</a></li>
+          <li><a href="blogs">スタッフブログ</a></li>
+          <li><a href="otoiawase">ご予約、お問い合わせ</a></li>
+          <li><a href="sitemap">サイトマップ</a></li>
+        </ul>
+      </nav>
+      <div class="sns">
+        <a href="https://line.me/R/ti/p/%40tmd4509a"><img src="img\footer-line.png" alt="Line@"></a>
 
-          <a href="https://instagram.com/kojikoji1997?igshid=1b11h3o0hhd52"><img src="img\footer-insta.png" alt="instagram"></a>
+        <a href="https://instagram.com/kojikoji1997?igshid=1b11h3o0hhd52"><img src="img\footer-insta.png" alt="instagram"></a>
 
-          <a href="https://twitter.com/ururu_datsumo?ref_src=twsrc%5Etfw" data-show-count="false"><img src="img\footer-twitter.png" alt="Twitter"></a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/ururu_datsumo?ref_src=twsrc%5Etfw" data-show-count="false"><img src="img\footer-twitter.png" alt="Twitter"></a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-          <a href="https://www.facebook.com/%E8%84%B1%E6%AF%9B%E3%82%B5%E3%83%AD%E3%83%B3-%E3%81%86%E3%82%8B%E3%82%8B-101603207864842/"><img src="img\footer-facebook.png" alt="Facebook"></a>
-        </div>
-        <p>COPYRIGHT (C) 脱毛サロンうるる ALL RIGHTS RESERVED.</p>
-      </footer>
+        <a href="https://www.facebook.com/%E8%84%B1%E6%AF%9B%E3%82%B5%E3%83%AD%E3%83%B3-%E3%81%86%E3%82%8B%E3%82%8B-101603207864842/"><img src="img\footer-facebook.png" alt="Facebook"></a>
+      </div>
+      <p>COPYRIGHT (C) 脱毛サロンうるる ALL RIGHTS RESERVED.</p>
+   </footer>
 
 
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHTZOwVoBG7sIBs1WRNqPysU2e5UBruA&language=ja"></script>
